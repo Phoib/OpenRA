@@ -1,0 +1,18 @@
+badr:
+	idle:
+
+ah64a:
+	idle:
+		Start: 0
+		Length: 2
+
+b2:
+	idle:
+
+a10a:
+	idle:
+
+2s19:
+	idle:
+	turret: 2s19tur
+	barrel: 2s19barl

@@ -1,0 +1,46 @@
+2S19:
+	Inherits: ^Tank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 40
+		Prerequisites: ~vehicles.allies
+	Valued:
+		Cost: 7
+	Tooltip:
+		Name: 2S19 
+		Description: 2S19 "Msta-S" Self propelled howitzer.\n152mm howitzer\nFires high explosive shells
+	Health:
+		HP: 220
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 128
+	RevealsShroud:
+		Range: 4c0
+	Turreted:
+		ROT: 5
+	Armament:
+		Weapon: 25mm
+		Recoil: 85
+		RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	RenderSprites:
+	RenderVoxels:
+		PlayerPalette: tibsun
+		Scale: 1
+		LightAmbientColor: 0.8, 0.8, 0.8
+		LightDiffuseColor: 0.6, 0.6, 0.6
+	WithVoxelBody:
+	WithVoxelTurret:
+	WithVoxelBarrel:
+	WithMuzzleFlash:
+#	WithTurret:
+	AutoTarget:
+	Explodes:
+		Weapon: UnitExplodeSmall
+		EmptyWeapon: UnitExplodeSmall
+	LeavesHusk:
+		HuskActor: 1TNK.Husk
+

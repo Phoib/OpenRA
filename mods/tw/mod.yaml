@@ -1,0 +1,203 @@
+Metadata:
+	Title: True War
+	Description: War between America and Russia turns hot in Ukraine.
+	Version: {DEV_VERSION}
+	Author: Derelict Studios
+
+Folders:
+	.
+	./mods/tw
+	./mods/tw/bits
+	./mods/tw/bits/desert
+	./mods/tw/uibits
+	~^Content/ra
+
+MapFolders:
+	./mods/tw/maps: System
+	~^maps/ra: User
+
+Packages:
+	~main.mix
+	redalert.mix
+	conquer.mix
+	hires.mix
+	local.mix
+	sounds.mix
+	speech.mix
+	allies.mix
+	russian.mix
+	temperat.mix
+	snow.mix
+	interior.mix
+	~scores.mix
+	~movies1.mix
+	~movies2.mix
+
+Rules:
+	mods/tw/rules/misc.yaml
+	mods/tw/rules/ai.yaml
+	mods/tw/rules/player.yaml
+	mods/tw/rules/world.yaml
+	mods/tw/rules/defaults.yaml
+	mods/tw/rules/vehicles.yaml
+	mods/tw/rules/husks.yaml
+	mods/tw/rules/structures.yaml
+	mods/tw/rules/infantry.yaml
+	mods/tw/rules/civilian.yaml
+	mods/tw/rules/decoration.yaml
+	mods/tw/rules/aircraft.yaml
+	mods/tw/rules/ships.yaml
+	mods/tw/rules/russia/2s19.yaml
+
+Sequences:
+	mods/tw/sequences/ships.yaml
+	mods/tw/sequences/vehicles.yaml
+	mods/tw/sequences/structures.yaml
+	mods/tw/sequences/infantry.yaml
+	mods/tw/sequences/aircraft.yaml
+	mods/tw/sequences/misc.yaml
+	mods/tw/sequences/decorations.yaml
+
+VoxelSequences:
+	mods/tw/sequences/voxels.yaml
+
+Cursors:
+	mods/tw/cursors.yaml
+
+Chrome:
+	mods/tw/chrome.yaml
+
+Assemblies:
+	mods/ra/OpenRA.Mods.RA.dll
+	mods/cnc/OpenRA.Mods.Cnc.dll
+	mods/d2k/OpenRA.Mods.D2k.dll
+
+ChromeLayout:
+	mods/tw/chrome/install.yaml
+	mods/tw/chrome/ingame.yaml
+	mods/tw/chrome/ingame-chat.yaml
+	mods/tw/chrome/ingame-diplomacy.yaml
+	mods/tw/chrome/ingame-fmvplayer.yaml
+	mods/tw/chrome/ingame-menu.yaml
+	mods/tw/chrome/ingame-objectives.yaml
+	mods/tw/chrome/ingame-observer.yaml
+	mods/tw/chrome/ingame-observerstats.yaml
+	mods/tw/chrome/ingame-player.yaml
+	mods/tw/chrome/ingame-debug.yaml
+	mods/tw/chrome/mainmenu.yaml
+	mods/tw/chrome/settings.yaml
+	mods/tw/chrome/credits.yaml
+	mods/tw/chrome/lobby.yaml
+	mods/tw/chrome/lobby-mappreview.yaml
+	mods/tw/chrome/lobby-playerbin.yaml
+	mods/tw/chrome/lobby-dialogs.yaml
+	mods/tw/chrome/color-picker.yaml
+	mods/tw/chrome/map-chooser.yaml
+	mods/tw/chrome/create-server.yaml
+	mods/tw/chrome/serverbrowser.yaml
+	mods/tw/chrome/connection.yaml
+	mods/tw/chrome/directconnect.yaml
+	mods/tw/chrome/replaybrowser.yaml
+	mods/tw/chrome/dropdowns.yaml
+	mods/tw/chrome/musicplayer.yaml
+	mods/tw/chrome/tooltips.yaml
+	mods/tw/chrome/assetbrowser.yaml
+	mods/tw/chrome/irc.yaml
+	mods/tw/chrome/missionbrowser.yaml
+	mods/tw/chrome/confirmation-dialogs.yaml
+
+Weapons:
+	mods/tw/weapons.yaml
+	
+Voices:
+	mods/tw/voices.yaml
+
+Notifications:
+	mods/tw/notifications.yaml
+	
+TileSets:
+	mods/tw/tilesets/snow.yaml
+	mods/tw/tilesets/interior.yaml
+	mods/tw/tilesets/temperat.yaml
+	mods/tw/tilesets/desert.yaml
+
+Music:
+	mods/tw/music.yaml
+
+Movies:
+	mods/tw/movies1.yaml
+	mods/tw/movies2.yaml
+
+Translations:
+	mods/tw/languages/english.yaml
+
+LoadScreen: DefaultLoadScreen
+	Image: mods/tw/uibits/loadscreen.png
+	Text: Starting engines..., Calibrating sights..., Stacking munitions...
+
+ContentInstaller:
+	InstallerMenuWidget: INSTALL_PANEL
+	TestFiles: allies.mix, conquer.mix, interior.mix, redalert.mix, russian.mix, snow.mix, sounds.mix, temperat.mix
+	PackageMirrorList: http://www.openra.net/packages/ra-mirrors.txt
+	DiskTestFiles: MAIN.MIX, INSTALL/REDALERT.MIX
+	PackageToExtractFromCD: MAIN.MIX
+	ExtractFilesFromCD: conquer.mix, russian.mix, allies.mix, sounds.mix, scores.mix, snow.mix, interior.mix, temperat.mix, general.mix
+	CopyFilesFromCD: INSTALL/REDALERT.MIX
+	ShippedSoundtracks: 2
+	MusicPackageMirrorList: http://www.openra.net/packages/ra-music-mirrors.txt
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+
+LobbyDefaults:
+	AllowCheats: false
+	Crates: true
+	StartingUnitsClass: none
+	FragileAlliances: false
+	Shroud: true
+	Fog: true
+	TechLevel: Unrestricted
+
+ChromeMetrics:
+	mods/tw/metrics.yaml
+
+Fonts:
+	Regular:
+		Font:FreeSans.ttf
+		Size:14
+	Bold:
+		Font:FreeSansBold.ttf
+		Size:14
+	Title:
+		Font:mods/tw/ZoodRangmah.ttf
+		Size:48
+	BigBold:
+		Font:FreeSansBold.ttf
+		Size:24
+	Tiny:
+		Font:FreeSans.ttf
+		Size:10
+	TinyBold:
+		Font:FreeSansBold.ttf
+		Size:10
+
+LuaScripts:
+	mods/common/lua/utils.lua
+	mods/common/lua/openra.lua
+	mods/common/lua/map.lua
+	mods/common/lua/actor.lua
+	mods/common/lua/team.lua
+	mods/common/lua/media.lua
+	mods/common/lua/mission.lua
+	mods/common/lua/reinforcements.lua
+	mods/common/lua/supportpowers.lua
+	mods/common/lua/rules.lua
+	mods/common/lua/production.lua
+	mods/common/lua/facing.lua
+
+Missions:
+	mods/tw/missions.yaml
+
+SupportsMapsFrom: ra

@@ -1,0 +1,1416 @@
+MSLO:
+	Inherits: ^Building
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Missile Silo
+		Description: Provides an atomic bomb.\nSpecial Ability: Atom Bomb\n\nMaximum 1 can be built
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 140
+#		Prerequisites: techcenter, ~techlevel.unrestricted
+#		BuildLimit: 1
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	IronCurtainable:
+	NukePower:
+		Icon: abomb
+		ChargeTime: 540
+		Description: Atom Bomb
+		LongDesc: Launches a devastating atomic bomb\nat a target location.
+		BeginChargeSound: aprep1.aud
+		EndChargeSound: aready1.aud
+		SelectTargetSound: slcttgt1.aud
+		InsufficientPowerSound: nopowr1.aud
+		IncomingSound: alaunch1.aud
+		LaunchSound:
+		MissileWeapon: atomic
+		SpawnOffset: 0,427,0
+		DisplayTimer: True
+		DisplayBeacon: True
+		DisplayRadarPing: True
+		BeaconPoster: atomicon
+		CameraActor: camera
+	CanPowerDown:
+	RequiresPower:
+	DisabledOverlay:
+	SupportPowerChargeBar:
+	Power:
+		Amount: -100
+
+GAP:
+	Inherits: ^Building
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Gap Generator
+		Description: Obscures the enemy's view with shroud.
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 110
+#		Prerequisites: atek, ~structures.allies, ~techlevel.unrestricted
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	RenderBuilding:
+		PauseOnLowPower: yes
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Bib:
+		HasMinibib: Yes
+	CreatesShroud:
+		Range: 6c0
+	IronCurtainable:
+	RenderShroudCircle:
+	Power:
+		Amount: -60
+
+SPEN:
+	Inherits: ^Building
+	InfiltrateForSupportPower:
+		Proxy: powerproxy.sonarpulse
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: Sub Pen
+		Description: Produces and repairs submarines and\ntransports.
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 50
+#		Prerequisites: anypower, ~structures.soviet, ~techlevel.low
+	TargetableBuilding:
+		TargetTypes: Ground, Water, C4, DetonateAttack, SpyInfiltrate
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+		Adjacent: 8
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 1000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 4c0
+	Exit@1:
+		SpawnOffset: 0,-213,0
+		Facing: 96
+		ExitCell: -1,2
+	Exit@2:
+		SpawnOffset: 0,-213,0
+		Facing: 160
+		ExitCell: 3,2
+	Exit@3:
+		SpawnOffset: 0,0,0
+		Facing: 32
+		ExitCell: 0,0
+	Exit@4:
+		SpawnOffset: 0,0,0
+		Facing: 224
+		ExitCell: 2,0
+	Production:
+		Produces: Ship, Submarine
+	PrimaryBuilding:
+	IronCurtainable:
+	-EmitInfantryOnSell:
+	RepairsUnits:
+	RallyPoint:
+	ProductionBar:
+	Power:
+		Amount: -30
+
+SYRD:
+	Inherits: ^Building
+	InfiltrateForSupportPower:
+		Proxy: powerproxy.sonarpulse
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 40
+#		Prerequisites: anypower, ~structures.allies, ~techlevel.low
+	Valued:
+		Cost: 1000
+	Tooltip:
+		Name: Shipyard
+		Description: Produces and repairs ships\nand transports.
+	TargetableBuilding:
+		TargetTypes: Ground, Water, C4, DetonateAttack, SpyInfiltrate
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+		Adjacent: 8
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 1000
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 4c0
+	Exit@1:
+		SpawnOffset: -1024,1024,0
+		Facing: 160
+		ExitCell: 0,2
+	Exit@2:
+		SpawnOffset: 1024,1024,0
+		Facing: 224
+		ExitCell: 2,2
+	Exit@3:
+		SpawnOffset: -1024,-1024,0
+		Facing: 96
+		ExitCell: 0,0
+	Exit@4:
+		SpawnOffset: 1024,-1024,0
+		Facing: 32
+		ExitCell: 2,0
+	Production:
+		Produces: Ship, Boat
+	PrimaryBuilding:
+	IronCurtainable:
+	-EmitInfantryOnSell:
+	RepairsUnits:
+	RallyPoint:
+	ProductionBar:
+	Power:
+		Amount: -30
+
+IRON:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 130
+#		Prerequisites: stek, ~structures.soviet, ~techlevel.unrestricted
+#		BuildLimit: 1
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Iron Curtain
+		Description: Makes a group of units invulnerable\nfor a short time.\n  Special Ability: Invulnerability\n\nMaximum 1 can be built
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	Selectable:
+		Bounds: 50,50,0,-12
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Bib:
+		HasMinibib: Yes
+	IronCurtainable:
+	IronCurtainPower:
+		Icon: invuln
+		ChargeTime: 120
+		Description: Invulnerability
+		LongDesc: Makes a group of units invulnerable\nfor 20 seconds.
+		Duration: 20
+		SelectTargetSound: slcttgt1.aud
+		InsufficientPowerSound: nopowr1.aud
+		BeginChargeSound: ironchg1.aud
+		EndChargeSound: ironrdy1.aud
+		DisplayRadarPing: True
+	SupportPowerChargeBar:
+	Power:
+		Amount: -200
+
+PDOX:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 120
+#		Prerequisites: atek, ~structures.allies, ~techlevel.unrestricted
+#		BuildLimit: 1
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Chronosphere
+		Description: Teleports a group of units across the\nmap for a short time.\n  Special Ability: Chronoshift\n\nMaximum 1 can be built
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Bib:
+		HasMinibib: Yes
+	IronCurtainable:
+	ChronoshiftPower:
+		Icon: chrono
+		ChargeTime: 120
+		Description: Chronoshift
+		LongDesc: Teleports a group of units across\nthe map for 20 seconds.
+		SelectTargetSound: slcttgt1.aud
+		InsufficientPowerSound: nopowr1.aud
+		BeginChargeSound: chrochr1.aud
+		EndChargeSound: chrordy1.aud
+		Duration: 20
+		KillCargo: yes
+		DisplayRadarPing: True
+	SupportPowerChargeBar:
+	-AcceptsSupplies:
+	Power:
+		Amount: -200
+
+TSLA:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 80
+#		Prerequisites: weap, ~structures.soviet, ~techlevel.medium
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Tesla Coil
+		Description: Advanced base defense. Requires power\nto operate.\n  Strong vs Tanks, Infantry\n  Weak vs Aircraft
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	-GivesBuildableArea:
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 8c0
+	Bib:
+		HasMinibib: Yes
+	RenderBuildingCharge:
+		ChargeAudio: tslachg2.aud
+	Armament:
+		Weapon: TeslaZap
+		LocalOffset: 0,0,427
+	AttackCharge:
+		MaxCharges: 3
+		ReloadTime: 120
+	AutoTarget:
+	IronCurtainable:
+	-RenderBuilding:
+	RenderRangeCircle:
+	-AcceptsSupplies:
+	DrawLineToTarget:
+	Power:
+		Amount: -150
+
+AGUN:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 90
+#		Prerequisites: dome, ~structures.allies, ~techlevel.medium
+	Valued:
+		Cost: 800
+	Tooltip:
+		Name: AA Gun
+		Description: Anti-Air base defense. Requires power\nto operate.\n  Strong vs Aircraft\n  Weak vs Infantry, Tanks
+	Building:
+		Footprint: _ x
+		Dimensions: 1,2
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	-GivesBuildableArea:
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	Bib:
+		HasMinibib: Yes
+	Turreted:
+		ROT: 15
+		InitialFacing: 224
+	RenderBuildingTurreted:
+	Armament:
+		Weapon: ZSU-23
+		LocalOffset: 432,150,-30, 432,-150,-30
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleFlash:
+	AutoTarget:
+	IronCurtainable:
+	-RenderBuilding:
+	RenderRangeCircle:
+		RangeCircleType: aa
+	-AcceptsSupplies:
+	DrawLineToTarget:
+	Power:
+		Amount: -50
+
+DOME:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 90
+#		Prerequisites: proc, ~techlevel.medium
+	Valued:
+		Cost: 1800
+	Tooltip:
+		Name: Radar Dome
+		Description: Provides an overview of the battlefield.\nCan detect cloaked units.\n  Requires power to operate.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	TargetableBuilding:
+		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Bib:
+	ProvidesRadar:
+	IronCurtainable:
+	InfiltrateForExploration:
+	DetectCloaked:
+		Range: 10
+	RenderDetectionCircle:
+	Power:
+		Amount: -40
+
+PBOX:
+	Inherits: ^Building
+	Tooltip:
+		Name: Pillbox
+		Description: Static defense with a fireport for a\ngarrisoned soldier.
+	Building:
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 40
+#		Prerequisites: tent, ~structures.allies, ~techlevel.low
+	-GivesBuildableArea:
+	Valued:
+		Cost: 400
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	Bib:
+		HasMinibib: Yes
+	IronCurtainable:
+	-AcceptsSupplies:
+	Turreted:
+		ROT: 255
+	BodyOrientation:
+		QuantizedFacings: 8
+	Cargo:
+		Types: Infantry
+		MaxWeight: 1
+		PipCount: 1
+		InitialUnits: e1
+	-EmitInfantryOnSell:
+	DrawLineToTarget:
+	AttackGarrisoned:
+		Armaments: garrisoned
+		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
+		PortYaws: 0, 176, 341, 512, 682, 853
+		PortCones: 86, 86, 86, 86, 86, 86
+	RenderRangeCircle:
+		FallbackRange: 6c0
+	AutoTarget:
+	Power:
+		Amount: -15
+
+HBOX:
+	Inherits: ^Building
+	Tooltip:
+		Name: Camo Pillbox
+		Description: Camouflaged static defense with a fireport\nfor a garrisoned soldier.
+	Building:
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 50
+#		Prerequisites: tent, ~structures.allies, ~techlevel.medium
+	-GivesBuildableArea:
+	Valued:
+		Cost: 600
+	Health:
+		HP: 600
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	Cloak:
+		InitialDelay: 125
+		CloakDelay: 60
+	IronCurtainable:
+	-AcceptsSupplies:
+	Turreted:
+		ROT: 255
+	BodyOrientation:
+		QuantizedFacings: 8
+	Cargo:
+		Types: Infantry
+		MaxWeight: 1
+		PipCount: 1
+		InitialUnits: e1
+	-EmitInfantryOnSell:
+	DrawLineToTarget:
+	DetectCloaked:
+		Range: 6
+	RenderRangeCircle:
+		FallbackRange: 6c0
+	AutoTarget:
+	AttackGarrisoned:
+		Armaments: garrisoned
+		PortOffsets: 384,0,128, 224,-341,128, -224,-341,128, -384,0,128, -224,341,128, 224,341,128
+		PortYaws: 0, 176, 341, 512, 682, 853
+		PortCones: 86, 86, 86, 86, 86, 86
+	Power:
+		Amount: -15
+
+GUN:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 70
+#		Prerequisites: tent, ~structures.allies, ~techlevel.medium
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Turret
+		Description: Anti-Armor base defense.\n  Strong vs Tanks\n  Weak vs Infantry, Aircraft
+	Building:
+	-GivesBuildableArea:
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 7c0
+	Bib:
+		HasMinibib: Yes
+	Turreted:
+		ROT: 12
+		InitialFacing: 50
+	RenderBuildingTurreted:
+	Armament:
+		Weapon: TurretGun
+		LocalOffset: 512,0,112
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleFlash:
+	AutoTarget:
+	IronCurtainable:
+	-RenderBuilding:
+	RenderRangeCircle:
+	-AcceptsSupplies:
+	DrawLineToTarget:
+	Power:
+		Amount: -40
+
+FTUR:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 60
+#		Prerequisites: barr, ~structures.soviet, ~techlevel.low
+	Valued:
+		Cost: 600
+	Tooltip:
+		Name: Flame Tower
+		Description: Anti-Infantry base defense.\n  Strong vs Infantry\n  Weak vs Aircraft
+	Building:
+	-GivesBuildableArea:
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 6c0
+	Bib:
+		HasMinibib: Yes
+	Turreted:
+		ROT: 255
+		Offset: 0,0,112
+	Armament:
+		Weapon: FireballLauncher
+		LocalOffset: 512,0,0
+	AttackTurreted:
+	BodyOrientation:
+		QuantizedFacings: 8
+	AutoTarget:
+	IronCurtainable:
+	RenderRangeCircle:
+	-AcceptsSupplies:
+	DrawLineToTarget:
+	Power:
+		Amount: -20
+
+SAM:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 100
+#		Prerequisites: dome, ~structures.soviet, ~techlevel.medium
+	Valued:
+		Cost: 750
+	Tooltip:
+		Name: SAM Site
+		Description: Anti-Air base defense. Requires power\nto operate.\n  Strong vs Aircraft\n  Weak vs Infantry, Tanks
+	Building:
+		Footprint: xx
+		Dimensions: 2,1
+	RequiresPower:
+	CanPowerDown:
+	DisabledOverlay:
+	-GivesBuildableArea:
+	Health:
+		HP: 400
+	Armor:
+		Type: Heavy
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+		HasMinibib: Yes
+	Turreted:
+		ROT: 30
+		InitialFacing: 0
+	RenderBuildingTurreted:
+	Armament:
+		Weapon: Nike
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleFlash:
+	AutoTarget:
+	IronCurtainable:
+	-RenderBuilding:
+	RenderRangeCircle:
+		RangeCircleType: aa
+	-AcceptsSupplies:
+	DrawLineToTarget:
+	Power:
+		Amount: -40
+
+ATEK:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 140
+#		Prerequisites: weap, dome, ~structures.allies, ~techlevel.unrestricted
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Allied Tech Center
+		Description: Provides Allied advanced technologies.\n  Special Ability: GPS Satellite
+	ProvidesCustomPrerequisite:
+		Prerequisite: techcenter
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 400
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 10c0
+	Bib:
+	IronCurtainable:
+	GpsPower:
+		Icon: gps
+		OneShot: yes
+		ChargeTime: 480
+		Description: GPS Satellite
+		LongDesc: Reveals map terrain and provides tactical\ninformation.
+		RevealDelay: 15
+		LaunchSound: satlnch1.aud
+		DisplayTimer: True
+	SupportPowerChargeBar:
+	RequiresPower:
+	DisabledOverlay:
+	Power:
+		Amount: -200
+
+WEAP:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 80
+#		Prerequisites: proc, ~techlevel.low
+	Valued:
+		Cost: 2000
+	Tooltip:
+		Name: War Factory
+		Description: Produces vehicles.
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 1500
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	-RenderBuilding:
+	RenderBuildingWarFactory:
+	RallyPoint:
+	Exit@1:
+		SpawnOffset: 213,-128,0
+		ExitCell: 1,2
+	Production:
+		Produces: Vehicle
+	ProvidesCustomPrerequisite@allies:
+		Race: allies
+		Prerequisite: vehicles.allies
+	ProvidesCustomPrerequisite@soviet:
+		Race: soviet
+		Prerequisite: vehicles.soviet
+	ProvidesCustomPrerequisite@alliedstructure:
+		RequiresPrerequisites: structures.allies
+		Prerequisite: vehicles.allies
+	ProvidesCustomPrerequisite@sovietstructure:
+		RequiresPrerequisites: structures.soviet
+		Prerequisite: vehicles.soviet
+	PrimaryBuilding:
+	IronCurtainable:
+	ProductionBar:
+	Power:
+		Amount: 30
+
+FACT:
+	Inherits: ^Building
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 1000
+#		Prerequisites: ~disabled
+	ProvidesCustomPrerequisite@allies:
+		Race: allies
+		Prerequisite: structures.allies
+	ProvidesCustomPrerequisite@soviet:
+		Race: soviet
+		Prerequisite: structures.soviet
+	Health:
+		HP: 1500
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+	Production:
+		Produces: Building,Defense
+	IronCurtainable:
+	Valued:
+		Cost: 2500
+	Tooltip:
+		Name: Construction Yard
+		Description: Produces structures.
+	CustomSellValue:
+		Value: 2500
+	BaseBuilding:
+	Transforms:
+		IntoActor: mcv
+		Offset: 1,1
+		Facing: 96
+	ProductionBar@Building:
+		ProductionType: Building
+	ProductionBar@Defense:
+		ProductionType: Defense
+	DeadBuildingState:
+	BaseProvider:
+		Range: 16
+	WithBuildingPlacedAnimation:
+	Power:
+		Amount: 0
+
+PROC:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 60
+#		Prerequisites: anypower, ~techlevel.infonly
+	Valued:
+		Cost: 1400
+	Tooltip:
+		Name: Ore Refinery
+		Description: Refines Ore and Gems into credits.
+	Building:
+		Footprint: _x_ xxx x==
+		Dimensions: 3,3
+	TargetableBuilding:
+		TargetTypes: Ground, C4, DetonateAttack, SpyInfiltrate
+	Health:
+		HP: 900
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 6c0
+	Bib:
+	OreRefinery:
+	StoresResources:
+		PipCount: 17
+		Capacity: 2000
+	IronCurtainable:
+	DrawLineToTarget:
+	CustomSellValue:
+		Value: 600
+	FreeActor:
+		Actor: HARV
+		InitialActivity: FindResources
+		SpawnOffset: 1,2
+		Facing: 64
+	InfiltrateForCash:
+		Percentage: 50
+		Minimum: 500
+		SoundToVictim: credit1.aud
+	DeadBuildingState:
+	WithIdleOverlay@TOP:
+		Sequence: idle-top
+	Power:
+		Amount: -30
+
+SILO:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 70
+#		Prerequisites: proc, ~techlevel.infonly
+	Valued:
+		Cost: 150
+	Tooltip:
+		Name: Silo
+		Description: Stores excess refined Ore and gems.
+	Building:
+	-GivesBuildableArea:
+	Health:
+		HP: 300
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+		HasMinibib: Yes
+	RenderBuildingSilo:
+	StoresResources:
+		PipCount: 5
+		Capacity: 1500
+	IronCurtainable:
+	-RenderBuilding:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -10
+
+HPAD:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 120
+#		Prerequisites: dome, ~structures.allies, ~techlevel.medium
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Helipad
+		Description: Produces and reloads helicopters.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+	Exit@1:
+		SpawnOffset: 0,-256,0
+		ExitCell: 0,0
+		MoveIntoWorld: false
+	RallyPoint:
+	Production:
+		Produces: Aircraft, Helicopter
+	Reservable:
+	IronCurtainable:
+	ProductionBar:
+	PrimaryBuilding:
+	Power:
+		Amount: -10
+
+AFLD:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 130
+#		Prerequisites: dome, ~structures.soviet, ~techlevel.medium
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Airfield
+		Description: Produces and reloads aircraft.\n  Special Ability: Paratroopers\n  Special Ability: Spy Plane
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 1000
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 7c0
+	Exit@1:
+		SpawnOffset: 0,170,0
+		ExitCell: 1,1
+		Facing: 192
+		MoveIntoWorld: false
+	RallyPoint:
+	Production:
+		Produces: Aircraft, Plane
+	Reservable:
+	IronCurtainable:
+	AirstrikePower:
+		Icon: spyplane
+		ChargeTime: 180
+		Description: Spy Plane
+		LongDesc: Reveals an area of the map\nand cloaked enemy units.
+		SelectTargetSound: slcttgt1.aud
+		EndChargeSound: spypln1.aud
+		CameraActor: camera
+		CameraRemoveDelay: 150
+		UnitType: u2
+		QuantizedFacings: 8
+		DisplayBeacon: true
+		BeaconPoster: camicon
+	ParatroopersPower:
+		Icon: paratroopers
+		ChargeTime: 360
+		Description: Paratroopers
+		LongDesc: A Badger drops a squad of infantry\nanywhere on the map.
+		DropItems: E1,E1,E1,E3,E3
+		SelectTargetSound: slcttgt1.aud
+		AllowImpassableCells: false
+		QuantizedFacings: 8
+		CameraActor: camera.paradrop
+		DisplayBeacon: true
+		BeaconPoster: pinficon
+	ProductionBar:
+	SupportPowerChargeBar:
+	PrimaryBuilding:
+	Power:
+		Amount: -20
+
+POWR:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 10
+#		Prerequisites: ~techlevel.infonly
+	Valued:
+		Cost: 300
+	Tooltip:
+		Name: Power Plant
+		Description: Provides power for other structures.
+	ProvidesCustomPrerequisite:
+		Prerequisite: anypower
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 400
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	IronCurtainable:
+	DeadBuildingState:
+	Power:
+		Amount: 100
+		ScaleWithHealth: True
+
+APWR:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 110
+#		Prerequisites: dome, ~techlevel.medium
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Advanced Power Plant
+		Description: Provides double the power of a\nstandard Power Plant.
+	ProvidesCustomPrerequisite:
+		Prerequisite: anypower
+	Building:
+		Footprint: ___ xxx xxx
+		Dimensions: 3,3
+	Health:
+		HP: 700
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	IronCurtainable:
+	DeadBuildingState:
+	Power:
+		Amount: 200
+		ScaleWithHealth: True
+
+STEK:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 150
+#		Prerequisites: weap, dome, ~structures.soviet, ~techlevel.unrestricted
+	Valued:
+		Cost: 1500
+	Tooltip:
+		Name: Soviet Tech Center
+		Description: Provides Soviet advanced technologies.
+	ProvidesCustomPrerequisite:
+		Prerequisite: techcenter
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	Health:
+		HP: 600
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	IronCurtainable:
+	Power:
+		Amount: -100
+
+BARR:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 30
+#		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Soviet Barracks
+		Description: Trains infantry.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+	RallyPoint:
+	Exit@1:
+		SpawnOffset: -170,810,0
+		ExitCell: 0,2
+	Exit@2:
+		SpawnOffset: -725,640,0
+		ExitCell: 0,2
+	Production:
+		Produces: Infantry, Soldier
+	PrimaryBuilding:
+	IronCurtainable:
+	ProductionBar:
+	ProvidesCustomPrerequisite:
+		Prerequisite: barracks
+	Power:
+		Amount: -20
+
+KENN:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 25
+#		Prerequisites: anypower, ~structures.soviet, ~techlevel.infonly
+	Valued:
+		Cost: 100
+	Tooltip:
+		Name: Kennel
+		Description: Trains Attack Dogs.
+	Building:
+	-GivesBuildableArea:
+	Health:
+		HP: 300
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+		HasMinibib: True
+	RallyPoint:
+		RallyPoint: 0,2
+	Exit:
+		SpawnOffset: -280,400,0
+		ExitCell: 0,1
+	Production:
+		Produces: Infantry, Dog
+	PrimaryBuilding:
+	IronCurtainable:
+	ProductionBar:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -10
+
+TENT:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 20
+#		Prerequisites: anypower, ~structures.allies, ~techlevel.infonly
+	Valued:
+		Cost: 400
+	Tooltip:
+		Name: Allied Barracks
+		Description: Trains infantry.
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+	RallyPoint:
+	Exit@1:
+		SpawnOffset: -42,810,0
+		ExitCell: 0,2
+	Exit@2:
+		SpawnOffset: -725,640,0
+		ExitCell: 0,2
+	Production:
+		Produces: Infantry, Soldier
+	PrimaryBuilding:
+	IronCurtainable:
+	ProductionBar:
+	ProvidesCustomPrerequisite:
+		Prerequisite: barracks
+	Power:
+		Amount: -20
+
+FIX:
+	Inherits: ^Building
+#	Buildable:
+#		Queue: Building
+#		BuildPaletteOrder: 100
+#		Prerequisites: weap, ~techlevel.medium
+	Valued:
+		Cost: 1200
+	Tooltip:
+		Name: Service Depot
+		Description: Repairs vehicles for credits.
+	Building:
+		Footprint: _x_ xxx _x_
+		Dimensions: 3,3
+	Health:
+		HP: 800
+	Armor:
+		Type: Wood
+	RevealsShroud:
+		Range: 5c0
+	Bib:
+		HasMinibib: Yes
+	Reservable:
+	RallyPoint:
+	IronCurtainable:
+	RepairsUnits:
+		Interval: 10
+	WithRepairAnimation:
+	Power:
+		Amount: -30
+
+FACF:
+	Inherits: ^Building
+	Valued:
+		Cost: 50
+#	Buildable:
+#		BuildPaletteOrder: 940
+#		Queue: Defense
+#		Prerequisites: ~disabled
+	Tooltip:
+		Icon: fake-icon
+		Name: Fake Construction Yard
+		Description: Looks like a Construction Yard.
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+	-GivesBuildableArea:
+	Health:
+		HP: 30
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	RenderBuilding:
+		Image: FACT
+	Fake:
+	IronCurtainable:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -2
+
+WEAF:
+	Inherits: ^Building
+	Valued:
+		Cost: 50
+#	Buildable:
+##		BuildPaletteOrder: 920
+#		Prerequisites: ~disabled
+		Queue: Defense
+	Tooltip:
+		Icon: fake-icon
+		Name: Fake War Factory
+		Description: Looks like a War Factory.
+	Building:
+		Footprint: xxx xxx
+		Dimensions: 3,2
+	-GivesBuildableArea:
+	Health:
+		HP: 30
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	-RenderBuilding:
+	RenderBuildingWarFactory:
+		Image: WEAP
+	Fake:
+	IronCurtainable:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -2
+
+SYRF:
+	Inherits: ^Building
+	Valued:
+		Cost: 50
+#	Buildable:
+#		BuildPaletteOrder: 900
+#		Queue: Defense
+#		Prerequisites: ~disabled
+	Tooltip:
+		Icon: fake-icon
+		Name: Fake Shipyard
+		Description: Looks like a Shipyard.
+	TargetableBuilding:
+		TargetTypes: Ground, Water
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+		Adjacent: 8
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 30
+	RevealsShroud:
+		Range: 4c0
+	RenderBuilding:
+		Image: SYRD
+	Fake:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -2
+
+SPEF:
+	Inherits: ^Building
+	Valued:
+		Cost: 50
+	TargetableBuilding:
+		TargetTypes: Ground, Water
+#	Buildable:
+#		BuildPaletteOrder: 910
+#		Queue: Defense
+#		Prerequisites: ~disabled
+	Tooltip:
+		Icon: fake-icon
+		Name: Fake Sub Pen
+		Description: Looks like a Sub Pen.
+	Building:
+		Footprint: xxx xxx xxx
+		Dimensions: 3,3
+		Adjacent: 8
+		TerrainTypes: Water
+	-GivesBuildableArea:
+	Health:
+		HP: 30
+	RevealsShroud:
+		Range: 4c0
+	RenderBuilding:
+		Image: SPEN
+	Fake:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -2
+
+DOMF:
+	Inherits: ^Building
+	Valued:
+		Cost: 50
+	Tooltip:
+		Icon: fake-icon
+		Name: Fake Radar Dome
+		Description: Looks like a Radar Dome.
+#	Buildable:
+#		BuildPaletteOrder: 930
+#		Queue: Defense
+#		Prerequisites: ~disabled
+	Building:
+		Footprint: xx xx
+		Dimensions: 2,2
+	-GivesBuildableArea:
+	Health:
+		HP: 30
+	RevealsShroud:
+		Range: 4c0
+	Bib:
+	RenderBuilding:
+		Image: DOME
+	Fake:
+	-EmitInfantryOnSell:
+	Power:
+		Amount: -2
+
+SBAG:
+	Inherits: ^Wall
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 10
+#		Prerequisites: fact, ~structures.allies, ~techlevel.low
+	Valued:
+		Cost: 25
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Sandbag Wall
+		Description: Stops infantry and blocks enemy fire.\nCan be crushed by tanks.
+	Health:
+		HP: 300
+	Armor:
+		Type: Wood
+	LineBuild:
+		Range: 8
+		NodeTypes: sandbag
+	LineBuildNode:
+		Types: sandbag
+	RenderBuildingWall:
+		Type: sandbag
+
+FENC:
+	Inherits: ^Wall
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 20
+#		Prerequisites: fact, ~structures.soviet, ~techlevel.low
+	Valued:
+		Cost: 25
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Wire Fence
+		Description: Stops infantry and blocks enemy fire.\nCan be crushed by tanks.
+	Health:
+		HP: 300
+	Armor:
+		Type: Wood
+	LineBuild:
+		Range: 8
+		NodeTypes: fence
+	LineBuildNode:
+		Types: fence
+	RenderBuildingWall:
+		Type: fence
+
+BRIK:
+	Inherits: ^Wall
+#	Buildable:
+#		Queue: Defense
+#		BuildPaletteOrder: 30
+#		Prerequisites: fact, ~techlevel.medium
+	Valued:
+		Cost: 100
+	CustomSellValue:
+		Value: 0
+	Tooltip:
+		Name: Concrete Wall
+		Description: Stop units and blocks enemy fire.
+	SoundOnDamageTransition:
+		DamagedSound: crmble2.aud
+		DestroyedSound: kaboom30.aud
+	Health:
+		HP: 500
+	Armor:
+		Type: Concrete
+	Wall:
+		CrushClasses: heavywall
+	LineBuild:
+		Range: 8
+		NodeTypes: concrete
+	LineBuildNode:
+		Types: concrete
+	RenderBuildingWall:
+		Type: concrete
+
+CYCL:
+	Inherits: ^Wall
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+
+BARB:
+	Inherits: ^Wall
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+
+WOOD:
+	Inherits: ^Wall
+	Health:
+		HP: 100
+	Armor:
+		Type: Wood
+
+BARRACKS:
+	Tooltip:
+		Name: Infantry Production
+		Description: Infantry Production
+
+TECHCENTER:
+	Tooltip:
+		Name: Tech Center
+		Description: Tech Center
+
+ANYPOWER:
+	Tooltip:
+		Name: Power Plant
+		Description: Power Plant
+

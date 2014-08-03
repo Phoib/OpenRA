@@ -1,0 +1,515 @@
+sidebar-allies: chrome.png
+	background-top: 0,167,238,290
+	background-iconrow: 0,457,238,47
+	background-bottom: 0,504,238,8
+	background-supportoverlay: 184,118,64,48
+
+sidebar-button-allies: chrome.png
+	background: 56,28,28,28
+sidebar-button-allies-hover: chrome.png
+	background: 56,0,28,28
+sidebar-button-allies-pressed: chrome.png
+	background: 56,28,28,28
+sidebar-button-allies-highlighted: chrome.png
+	background: 84,28,28,28
+sidebar-button-allies-highlighted-hover: chrome.png
+	background: 84,0,28,28
+sidebar-button-allies-highlighted-pressed: chrome.png
+	background: 84,28,28,28
+sidebar-button-allies-disabled: chrome.png
+	background: 112,0,28,28
+sidebar-button-allies-highlighted-disabled: chrome.png
+	background: 112,0,28,28
+
+sidebar-soviet: chrome.png
+	background-top: 274,167,238,290
+	background-iconrow: 274,457,238,47
+	background-bottom: 274,504,238,8
+	background-supportoverlay: 249,118,64,48
+
+sidebar-button-soviet: chrome.png
+	background: 0,28,28,28
+sidebar-button-soviet-hover: chrome.png
+	background: 0,0,28,28
+sidebar-button-soviet-pressed: chrome.png
+	background: 0,28,28,28
+sidebar-button-soviet-highlighted: chrome.png
+	background: 28,28,28,28
+sidebar-button-soviet-highlighted-hover: chrome.png
+	background: 28,0,28,28
+sidebar-button-soviet-highlighted-pressed: chrome.png
+	background: 28,28,28,28
+sidebar-button-soviet-disabled: chrome.png
+	background: 112,0,28,28
+sidebar-button-soviet-highlighted-disabled: chrome.png
+	background: 112,0,28,28
+
+sidebar-bits: chrome.png
+	production-tooltip-time: 416, 80, 16, 16
+	production-tooltip-power: 432, 80, 16, 16
+	production-tooltip-cost: 448, 80, 16, 16
+	production-iconoverlay: 314,118,238,48
+
+production-icons: chrome.png
+	building: 384,0,16,16
+	building-disabled: 384,16,16,16
+	building-alert: 384,32,16,16
+	defense: 400,0,16,16
+	defense-disabled: 400,16,16,16
+	defense-alert: 400,32,16,16
+	infantry: 416,0,16,16
+	infantry-disabled: 416,16,16,16
+	infantry-alert: 416,32,16,16
+	vehicle: 432,0,16,16
+	vehicle-disabled: 432,16,16,16
+	vehicle-alert: 432,32,16,16
+	aircraft: 448,0,16,16
+	aircraft-disabled: 448,16,16,16
+	aircraft-alert: 448,32,16,16
+	ship: 496,48,16,16
+	ship-disabled: 496,64,16,16
+	ship-alert: 496,80,16,16
+
+order-icons: chrome.png
+	options: 480,0,16,16
+	options-disabled: 480,16,16,16
+	options-active: 480,32,16,16
+	diplomacy: 464,48,16,16
+	diplomacy-disabled: 464,64,16,16
+	diplomacy-active: 464,80,16,16
+	sell: 496,0,16,16
+	sell-disabled: 496,16,16,16
+	sell-active: 496,32,16,16
+	repair: 384,48,16,16
+	repair-disabled: 384,64,16,16
+	repair-active: 384,80,16,16
+	beacon: 400,48,16,16
+	beacon-disabled: 400,64,16,16
+	beacon-active: 400,80,16,16
+	power: 480,48,16,16
+	power-disabled: 480,64,16,16
+	power-active: 480,80,16,16
+
+# Used for the menu
+dialog: dialog.png
+	background: 0,0,480,480
+	border-r: 489,0,9,192
+	border-l: 480,0,9,192
+	border-b: 0,489,191,9
+	border-t: 0,480,191,9
+	corner-tl: 191,480,9,9
+	corner-tr: 200,480,9,9
+	corner-bl: 191,489,9,9
+	corner-br: 200,489,9,9
+
+# Same as normal button
+dialog2: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# Same as pressed button
+dialog3: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# Same as the half transparent frame used in the Asset Browser
+dialog4: dialog.png
+	background: 517,392,54,54
+	border-t: 517,387,54,6
+	border-b: 517,446,54,6
+	border-l: 512,392,6,54
+	border-r: 571,392,6,54
+	corner-tl: 512,387,6,6
+	corner-tr: 571,387,6,6
+	corner-bl: 512,446,6,6
+	corner-br: 571,446,6,6
+
+lobby-bits: spawnpoints.png
+	spawn-unclaimed: 37,5,22,22
+	spawn-claimed: 5,5,22,22
+	admin: 64,5,7,5
+	colorpicker: 5,5,22,22
+	huepicker: 71,0,7,15
+
+strategic: strategic.png
+	unowned: 0,0,32,32
+	critical_unowned: 0,32,32,32
+	enemy_owned: 32,32,32,32
+	player_owned: 96,0,32,32
+
+flags: buttons.png
+	allies: 30,112,30,15
+	soviet: 0,112,30,15
+	random: 60,112,30,15
+	spectator: 60,112,30,15
+
+music: musicplayer.png
+	pause: 0,0,25,25
+	stop: 28,0,25,25
+	play: 56,0,25,25
+	next: 84,0,25,25
+	prev: 112,0,25,25
+	fastforward: 140,0,25,25
+	slowmo: 168,0,25,25
+
+scrollbar: buttons.png
+	down_arrow: 16,140,16,16
+	down_pressed: 16,140,16,16
+	up_arrow: 32,140,16,16
+	up_pressed: 32,140,16,16
+
+# A copy of dialog3 (pressed button)
+progressbar-bg: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# A copy of dialog2 (normal button)
+progressbar-thumb: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# A copy of dialog2 (normal button)
+button: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# 5% lighter than a normal button
+button-hover: dialog.png
+	background: 513,129,126,126
+	border-r: 639,129,1,126
+	border-l: 512,129,1,126
+	border-b: 513,255,126,1
+	border-t: 513,128,126,1
+	corner-tl: 512,128,1,1
+	corner-tr: 639,128,1,1
+	corner-bl: 512,255,1,1
+	corner-br: 639,255,1,1
+	
+# A copy of dialog3 (pressed button)
+button-pressed: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# 50% grey
+button-disabled: dialog.png
+	background: 513,257,126,126
+	border-r: 639,257,1,126
+	border-l: 512,257,1,126
+	border-b: 513,383,126,1
+	border-t: 513,256,126,1
+	corner-tl: 512,256,1,1
+	corner-tr: 639,256,1,1
+	corner-bl: 512,383,1,1
+	corner-br: 639,383,1,1
+
+# 10% darker than a normal button
+button-highlighted: dialog.png
+	background: 769,1,126,126
+	border-r: 895,1,1,126
+	border-l: 768,1,1,126
+	border-b: 769,127,126,1
+	border-t: 769,0,126,1
+	corner-tl: 768,0,1,1
+	corner-tr: 895,0,1,1
+	corner-bl: 768,127,1,1
+	corner-br: 895,127,1,1
+
+# A copy of button-highlighted
+button-highlighted-hover: dialog.png
+	background: 769,1,126,126
+	border-r: 895,1,1,126
+	border-l: 768,1,1,126
+	border-b: 769,127,126,1
+	border-t: 769,0,126,1
+	corner-tl: 768,0,1,1
+	corner-tr: 895,0,1,1
+	corner-bl: 768,127,1,1
+	corner-br: 895,127,1,1
+	
+button-highlighted-pressed: dialog.png
+	background: 897,1,126,126
+	border-r: 1023,1,1,126
+	border-l: 896,1,1,126
+	border-b: 897,127,126,1
+	border-t: 897,0,126,1
+	corner-tl: 896,0,1,1
+	corner-tr: 1023,0,1,1
+	corner-bl: 896,127,1,1
+	corner-br: 1023,127,1,1
+
+# A copy of button-highlighted
+button-highlighted-disabled: dialog.png
+	background: 769,1,126,126
+	border-r: 639,1,1,126
+	border-l: 768,1,1,126
+	border-b: 769,127,126,1
+	border-t: 769,0,126,1
+	corner-tl: 768,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 768,127,1,1
+	corner-br: 639,127,1,1
+
+# A copy of dialog2 (normal button)
+scrollthumb: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# A copy of button-hover
+scrollthumb-hover: dialog.png
+	background: 513,129,126,126
+	border-r: 639,129,1,126
+	border-l: 512,129,1,126
+	border-b: 513,255,126,1
+	border-t: 513,128,126,1
+	corner-tl: 512,128,1,1
+	corner-tr: 639,128,1,1
+	corner-bl: 512,255,1,1
+	corner-br: 639,255,1,1	
+	
+# A copy of dialog3 (pressed button)
+scrollthumb-pressed: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# A copy of dialog2 (normal button)
+scrollthumb-disabled: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# A copy of dialog3 (pressed button)
+textfield: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# A copy of checkbox-hover
+textfield-hover: dialog.png
+	background: 641,129,126,126
+	border-r: 767,129,1,126
+	border-l: 640,129,1,126
+	border-b: 641,255,126,1
+	border-t: 641,128,126,1
+	corner-tl: 640,128,1,1
+	corner-tr: 767,128,1,1
+	corner-bl: 640,255,1,1
+	corner-br: 767,255,1,1
+
+# Same as button-disabled-pressed
+textfield-disabled: dialog.png
+	background: 641,257,126,126
+	border-r: 767,257,1,126
+	border-l: 640,257,1,126
+	border-b: 641,383,126,1
+	border-t: 641,256,126,1
+	corner-tl: 640,256,1,1
+	corner-tr: 767,256,1,1
+	corner-bl: 640,383,1,1
+	corner-br: 767,383,1,1
+
+# A copy of dialog3 (pressed button)
+textfield-focused: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# A copy of dialog3 (pressed button)
+scrollpanel-bg: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+slider: dialog.png
+	tick: 512,1,2,4
+
+# A copy of dialog3 (pressed button)
+slider-track: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# A copy of dialog3 (pressed button)
+checkbox: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+checkbox-bits: buttons.png
+	checked: 0,140,16,16
+
+checkbox-hover: dialog.png
+	background: 641,129,126,126
+	border-r: 767,129,1,126
+	border-l: 640,129,1,126
+	border-b: 641,255,126,1
+	border-t: 641,128,126,1
+	corner-tl: 640,128,1,1
+	corner-tr: 767,128,1,1
+	corner-bl: 640,255,1,1
+	corner-br: 767,255,1,1
+
+# Same as button-disabled-pressed
+checkbox-disabled: dialog.png
+	background: 641,257,126,126
+	border-r: 767,257,1,126
+	border-l: 640,257,1,126
+	border-b: 641,383,126,1
+	border-t: 641,256,126,1
+	corner-tl: 640,256,1,1
+	corner-tr: 767,256,1,1
+	corner-bl: 640,383,1,1
+	corner-br: 767,383,1,1
+
+# Same as button-highlighted-pressed
+checkbox-highlighted: dialog.png
+	background: 897,1,126,126
+	border-r: 1023,1,1,126
+	border-l: 896,1,1,126
+	border-b: 897,127,126,1
+	border-t: 897,0,126,1
+	corner-tl: 896,0,1,1
+	corner-tr: 1023,0,1,1
+	corner-bl: 896,127,1,1
+	corner-br: 1023,127,1,1
+
+# A copy of dialog3 (pressed button)
+scrollitem-selected: dialog.png
+	background: 641,1,126,126
+	border-r: 767,1,1,126
+	border-l: 640,1,1,126
+	border-b: 641,127,126,1
+	border-t: 641,0,126,1
+	corner-tl: 640,0,1,1
+	corner-tr: 767,0,1,1
+	corner-bl: 640,127,1,1
+	corner-br: 767,127,1,1
+
+# A copy of dialog2 (normal button)
+scrollitem-hover: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+# A copy of dialog2 (normal button)
+scrollheader-selected: dialog.png
+	background: 513,1,126,126
+	border-r: 639,1,1,126
+	border-l: 512,1,1,126
+	border-b: 513,127,126,1
+	border-t: 513,0,126,1
+	corner-tl: 512,0,1,1
+	corner-tr: 639,0,1,1
+	corner-bl: 512,127,1,1
+	corner-br: 639,127,1,1
+
+logos: loadscreen.png
+	logo: 0,0,256,256
+
+mainmenu-border: dialog.png
+	background: 688,427,40,40
+	border-r: 728,427,40,40
+	border-l: 648,427,40,40
+	border-b: 688,467,40,40
+	border-t: 688,387,40,40
+	corner-tl: 648,387,40,40
+	corner-tr: 728,387,40,40
+	corner-bl: 648,467,40,40
+	corner-br: 728,467,40,40
