@@ -21,6 +21,7 @@
 	HiddenUnderFog:
 	GainsExperience:
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	AttackMove:
@@ -75,6 +76,7 @@
 	HiddenUnderFog:
 	GainsExperience:
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	AttackMove:
@@ -125,6 +127,7 @@
 	HiddenUnderFog:
 	GainsExperience:
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	Explodes:
@@ -191,6 +194,7 @@
 	PoisonedByTiberium:
 	GainsExperience:
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	SpawnViceroid:
@@ -300,6 +304,7 @@
 		TargetTypes: Ground, Infantry
 	HiddenUnderFog:
 	GivesExperience:
+		GivesPlayerExperience: true
 	RenderInfantry:
 		Palette: terrain
 	WithDeathAnimation:
@@ -328,6 +333,7 @@
 	HiddenUnderFog:
 	GainsExperience:
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	CombatDebugOverlay:
@@ -360,6 +366,7 @@
 	HiddenUnderFog:
 	GainsExperience:
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	AttackMove:
@@ -405,6 +412,7 @@
 	EmitInfantryOnSell:
 		ActorTypes: e6,e1
 	GivesExperience:
+		GivesPlayerExperience: true
 	CaptureNotification:
 		Notification: BuildingCaptured
 		NewOwnerVoice: no
@@ -538,6 +546,7 @@
 	RenderBuildingWall:
 		Palette: staticterrain
 	GivesExperience:
+		GivesPlayerExperience: true
 	EditorAppearance:
 		RelativeToTopLeft: yes
 	AutoTargetIgnore:

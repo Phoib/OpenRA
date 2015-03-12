@@ -6,7 +6,7 @@ Container@MAP_PANEL:
 		Background@PREVIEW_BG:
 			X: (PARENT_RIGHT - WIDTH) / 2
 			Y: 20
-			Width: 362
+			Width: 432
 			Height: 202
 			Background: dialog3
 			Children:

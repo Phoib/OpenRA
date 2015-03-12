@@ -16,7 +16,7 @@ Container@LEAVE_MAP_WIDGET:
 		Container@LEAVE_MAP_SIMPLE:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: (WINDOW_BOTTOM - HEIGHT) / 2
-			Width: 370
+			Width: 440
 			Height: 175
 			Visible: False
 			Children:
@@ -55,7 +55,7 @@ Container@LEAVE_MAP_WIDGET:
 		Container@LEAVE_MAP_FULL:
 			X: (WINDOW_RIGHT - WIDTH) / 2
 			Y: (WINDOW_BOTTOM - HEIGHT) / 2
-			Width: 522
+			Width: 592
 			Height: 495
 			Visible: False
 			Children:

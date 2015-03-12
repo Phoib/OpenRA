@@ -48,6 +48,8 @@ namespace OpenRA.Mods.Common.Traits
 		public int BuildingsKilled;
 		public int BuildingsDead;
 
+		public int ExperienceGained;
+
 		public PlayerStatistics(Actor self)
 		{
 			world = self.World;
@@ -138,6 +140,8 @@ namespace OpenRA.Mods.Common.Traits
 				var cost = self.Info.Traits.Get<ValuedInfo>().Cost;
 				attackerStats.KillsCost += cost;
 				defenderStats.DeathsCost += cost;
+				var experience = self.Info.Traits.Get<ValuedInfo>().Cost;
+				attackerStats.ExperienceGained += experience;
 			}
 		}
 	}

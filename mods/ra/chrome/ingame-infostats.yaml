@@ -19,7 +19,7 @@ Container@SKIRMISH_STATS:
 		Checkbox@STATS_CHECKBOX:
 			X: 20
 			Y: 55
-			Width: 482
+			Width: 522
 			Height: 20
 			Font: Bold
 			Text: Destroy all opposition!
@@ -64,10 +64,18 @@ Container@SKIRMISH_STATS:
 					Text: Deaths
 					Font: Bold
 					Align: Center
+				Label@EXPERIENCE:
+					X: 450
+					Width: 70
+					Height: 25
+					Text: Experience
+					Font: Bold
+					Align: Center
+
 		ScrollPanel@PLAYER_LIST:
 			X: 20
 			Y: 105
-			Width: 482
+			Width: 552
 			Height: 265
 			ItemSpacing: 5
 			Children:
@@ -105,4 +113,10 @@ Container@SKIRMISH_STATS:
 							Width: 70
 							Height: 25
 							Align: Center
+						Label@EXPERIENCE:
+							X: 450
+							Width: 70
+							Height: 25
+							Align: Center
+
 

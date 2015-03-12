@@ -25,6 +25,7 @@
 	MustBeDestroyed:
 		RequiredForShortGame: true
 	GivesExperience:
+		GivesPlayerExperience: true
 	CaptureNotification:
 	EditorAppearance:
 		RelativeToTopLeft: yes
@@ -99,6 +100,7 @@
 	RenderBuildingWall:
 		Type: wall
 	GivesExperience:
+		GivesPlayerExperience: true
 	EditorAppearance:
 		RelativeToTopLeft: yes
 		UseTerrainPalette: yes
@@ -169,6 +171,7 @@
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	ProximityCaptor:
@@ -273,6 +276,7 @@
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	ProximityCaptor:
@@ -353,6 +357,7 @@
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	ProximityCaptor:
@@ -426,6 +431,7 @@
 		UpgradeTypes: selfheal
 		UpgradeMinEnabledLevel: 1
 	GivesExperience:
+		GivesPlayerExperience: true
 	DrawLineToTarget:
 	ActorLostNotification:
 	CombatDebugOverlay:
