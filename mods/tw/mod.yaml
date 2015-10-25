@@ -1,0 +1,239 @@
+Metadata:
+	Title: True War
+	Description: Fill in later
+	Version: 0.0.1
+	Author: Derelict Studios
+
+Folders:
+	.
+	./mods/tw
+	./mods/tw/bits
+	./mods/tw/bits/desert
+	./mods/tw/uibits
+	~^Content/ra
+
+MapFolders:
+	./mods/tw/maps: System
+	~^maps/tw: User
+
+Packages:
+	~main.mix
+	redalert.mix
+	conquer.mix
+	hires.mix
+	local.mix
+	sounds.mix
+	speech.mix
+	allies.mix
+	russian.mix
+	temperat.mix
+	snow.mix
+	interior.mix
+	~scores.mix
+	~movies1.mix
+	~movies2.mix
+
+Rules:
+	./mods/tw/rules/misc.yaml
+	./mods/tw/rules/ai.yaml
+	./mods/tw/rules/player.yaml
+	./mods/tw/rules/palettes.yaml
+	./mods/tw/rules/world.yaml
+	./mods/tw/rules/defaults.yaml
+	./mods/tw/rules/vehicles.yaml
+	./mods/tw/rules/husks.yaml
+	./mods/tw/rules/structures.yaml
+	./mods/tw/rules/infantry.yaml
+	./mods/tw/rules/civilian.yaml
+	./mods/tw/rules/decoration.yaml
+	./mods/tw/rules/aircraft.yaml
+	./mods/tw/rules/ships.yaml
+	./mods/tw/rules/fakes.yaml
+
+Sequences:
+	./mods/tw/sequences/ships.yaml
+	./mods/tw/sequences/vehicles.yaml
+	./mods/tw/sequences/structures.yaml
+	./mods/tw/sequences/infantry.yaml
+	./mods/tw/sequences/aircraft.yaml
+	./mods/tw/sequences/misc.yaml
+	./mods/tw/sequences/decorations.yaml
+
+TileSets:
+	./mods/tw/tilesets/snow.yaml
+	./mods/tw/tilesets/interior.yaml
+	./mods/tw/tilesets/temperat.yaml
+	./mods/tw/tilesets/desert.yaml
+
+Cursors:
+	./mods/tw/cursors.yaml
+
+Chrome:
+	./mods/tw/chrome.yaml
+
+Assemblies:
+	./mods/common/OpenRA.Mods.Common.dll
+	./mods/tw/OpenRA.Mods.RA.dll
+	./mods/cnc/OpenRA.Mods.Cnc.dll
+
+ChromeLayout:
+	./mods/tw/chrome/ingame.yaml
+	./mods/tw/chrome/ingame-chat.yaml
+	./mods/tw/chrome/ingame-diplomacy.yaml
+	./mods/tw/chrome/ingame-fmvplayer.yaml
+	./mods/tw/chrome/ingame-info.yaml
+	./mods/tw/chrome/ingame-infoscripterror.yaml
+	./mods/tw/chrome/ingame-infobriefing.yaml
+	./mods/tw/chrome/ingame-infoobjectives.yaml
+	./mods/tw/chrome/ingame-infostats.yaml
+	./mods/tw/chrome/ingame-menu.yaml
+	./mods/tw/chrome/ingame-observer.yaml
+	./mods/tw/chrome/ingame-observerstats.yaml
+	./mods/tw/chrome/ingame-player.yaml
+	./mods/tw/chrome/ingame-perf.yaml
+	./mods/tw/chrome/ingame-debug.yaml
+	./mods/tw/chrome/mainmenu.yaml
+	./mods/tw/chrome/settings.yaml
+	./mods/tw/chrome/credits.yaml
+	./mods/tw/chrome/lobby.yaml
+	./mods/tw/chrome/lobby-mappreview.yaml
+	./mods/tw/chrome/lobby-players.yaml
+	./mods/tw/chrome/lobby-options.yaml
+	./mods/tw/chrome/lobby-music.yaml
+	./mods/tw/chrome/lobby-kickdialogs.yaml
+	./mods/tw/chrome/lobby-globalchat.yaml
+	./mods/tw/chrome/color-picker.yaml
+	./mods/tw/chrome/map-chooser.yaml
+	./mods/tw/chrome/multiplayer.yaml
+	./mods/tw/chrome/multiplayer-browser.yaml
+	./mods/tw/chrome/multiplayer-createserver.yaml
+	./mods/tw/chrome/multiplayer-directconnect.yaml
+	./mods/tw/chrome/multiplayer-globalchat.yaml
+	./mods/tw/chrome/connection.yaml
+	./mods/tw/chrome/replaybrowser.yaml
+	./mods/tw/chrome/dropdowns.yaml
+	./mods/tw/chrome/musicplayer.yaml
+	./mods/tw/chrome/tooltips.yaml
+	./mods/tw/chrome/assetbrowser.yaml
+	./mods/tw/chrome/missionbrowser.yaml
+	./mods/tw/chrome/confirmation-dialogs.yaml
+	./mods/tw/chrome/editor.yaml
+
+Weapons:
+	./mods/tw/weapons/explosions.yaml
+	./mods/tw/weapons/largecaliber.yaml
+	./mods/tw/weapons/missiles.yaml
+	./mods/tw/weapons/other.yaml
+	./mods/tw/weapons/smallcaliber.yaml
+	./mods/tw/weapons/superweapons.yaml
+	
+Voices:
+	./mods/tw/audio/voices.yaml
+
+Notifications:
+	./mods/tw/audio/notifications.yaml
+
+Music:
+	./mods/tw/audio/music.yaml
+
+Translations:
+	./mods/tw/languages/english.yaml
+
+LoadScreen: LogoStripeLoadScreen
+	Image: ./mods/tw/uibits/loadscreen.png
+	Text: Filling Crates..., Charging Capacitors..., Reticulating Splines..., Planting Trees..., Building Bridges..., Aging Empires..., Compiling EVA..., Constructing Pylons..., Activating Skynet..., Splitting Atoms...
+
+ContentInstaller:
+	TestFiles: ^Content/ra/allies.mix, ^Content/ra/conquer.mix, ^Content/ra/interior.mix, ^Content/ra/redalert.mix, ^Content/ra/russian.mix, ^Content/ra/snow.mix, ^Content/ra/sounds.mix, ^Content/ra/temperat.mix
+	PackageMirrorList: http://www.openra.net/packages/ra-mirrors.txt
+	DiskTestFiles: MAIN.MIX, INSTALL/REDALERT.MIX
+	PackageToExtractFromCD: MAIN.MIX
+	ExtractFilesFromCD:
+		.: conquer.mix, russian.mix, allies.mix, sounds.mix, scores.mix, snow.mix, interior.mix, temperat.mix, general.mix
+	CopyFilesFromCD:
+		.: INSTALL/REDALERT.MIX
+	ShippedSoundtracks: 2
+	MusicPackageMirrorList: http://www.openra.net/packages/ra-music-mirrors.txt
+	InstallShieldCABFilePackageIds: 105
+	InstallShieldCABFileIds: 116
+
+ServerTraits:
+	LobbyCommands
+	PlayerPinger
+	MasterServerPinger
+	LobbySettingsNotification
+	ColorValidator
+
+LobbyDefaults:
+	AllowCheats: false
+	Crates: true
+	StartingUnitsClass: none
+	FragileAlliances: false
+	Shroud: true
+	Fog: true
+	TechLevel: Unrestricted
+
+ChromeMetrics:
+	./mods/tw/metrics.yaml
+
+Fonts:
+	Regular:
+		Font:./mods/common/FreeSans.ttf
+		Size:14
+	Bold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:14
+	Title:
+		Font:./mods/tw/ZoodRangmah.ttf
+		Size:48
+	MediumBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:18
+	BigBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:24
+	Small:
+		Font:./mods/common/FreeSans.ttf
+		Size:12
+	Tiny:
+		Font:./mods/common/FreeSans.ttf
+		Size:10
+	TinyBold:
+		Font:./mods/common/FreeSansBold.ttf
+		Size:10
+
+Missions:
+	./mods/tw/missions.yaml
+
+MapGrid:
+	TileSize: 24,24
+	Type: Rectangle
+
+SupportsMapsFrom: ra
+
+SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS
+
+SpriteSequenceFormat: TilesetSpecificSpriteSequence
+	TilesetExtensions:
+		TEMPERAT: .tem
+		SNOW: .sno
+		INTERIOR: .int
+		DESERT: .des
+
+GameSpeeds:
+	slower:
+		Name: Slower
+		Timestep: 50
+		OrderLatency: 3
+	default:
+		Name: Normal
+		Timestep: 40
+		OrderLatency: 3
+	faster:
+		Name: Faster
+		Timestep: 30
+		OrderLatency: 4
+	fastest:
+		Name: Fastest
+		Timestep: 20
+		OrderLatency: 6
