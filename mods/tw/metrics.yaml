@@ -27,12 +27,7 @@ Metrics:
 	SpawnContrastColor: 0,0,0
 	SpawnLabelOffset: 0,1
 	FactionSuffix-allies: allies
-	FactionSuffix-england: allies
-	FactionSuffix-france: allies
-	FactionSuffix-germany: allies
 	FactionSuffix-soviet: soviet
-	FactionSuffix-russia: soviet
-	FactionSuffix-ukraine: soviet
 	IncompatibleVersionColor: 211,211,211
 	IncompatibleGameColor: 169,169,169
 	ProtectedGameColor: 255,0,0

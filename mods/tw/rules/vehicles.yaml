@@ -486,7 +486,7 @@ MGG:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 160
-		Prerequisites: atek, ~vehicles.france, ~techlevel.unrestricted
+		Prerequisites: atek, ~techlevel.unrestricted
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -545,7 +545,7 @@ TTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 180
-		Prerequisites: tsla, stek, ~vehicles.russia, ~techlevel.unrestricted
+		Prerequisites: tsla, stek, ~techlevel.unrestricted
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -614,7 +614,7 @@ DTRK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
-		Prerequisites: stek, ~vehicles.ukraine, ~techlevel.unrestricted
+		Prerequisites: stek, ~techlevel.unrestricted
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -644,7 +644,7 @@ CTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 210
-		Prerequisites: atek, pdox, ~vehicles.germany, ~techlevel.unrestricted
+		Prerequisites: atek, pdox, ~techlevel.unrestricted
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -707,7 +707,7 @@ STNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 140
-		Prerequisites: atek, ~vehicles.england, ~techlevel.unrestricted
+		Prerequisites: atek, ~techlevel.unrestricted
 	Valued:
 		Cost: 1350
 	Tooltip:
