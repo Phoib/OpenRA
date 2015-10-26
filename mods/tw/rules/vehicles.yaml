@@ -305,7 +305,7 @@ MCV:
 	RevealsShroud:
 		Range: 4c0
 	Transforms:
-		IntoActor: fact
+		IntoActor: weap
 		Offset: -1,-1
 		Facing: 96
 		TransformSounds: placbldg.aud, build5.aud

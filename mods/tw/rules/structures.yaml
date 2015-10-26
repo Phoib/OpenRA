@@ -740,7 +740,7 @@ WEAP:
 	PrimaryBuilding:
 	ProductionBar:
 	Power:
-		Amount: -30
+//        Amount: -30
 	ProvidesPrerequisite@buildingname:
 	Targetable:
 		TargetTypes: Ground, C4, DetonateAttack, Structure, SpyInfiltrate
