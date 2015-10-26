@@ -17,15 +17,27 @@
 		InternalName: allies
 		Side: NATO
 		Description: United States of America: Founding member of NATO
+		Selectable: False
 	Faction@1:
 		Name: Russia
 		InternalName: soviet
 		Side: SCO
         Description: Russian Federation: Founding member of SCO
+		Selectable: False
+	Faction@2:
+		Name: USA
+		InternalName: usa
+		Side: NATO
+		Description: United States of America: Founding member of NATO
+	Faction@3:
+		Name: Russia
+		InternalName: russia
+		Side: SCO
+        Description: Russian Federation: Founding member of SCO
 	Faction@random:
 		Name: Any
 		InternalName: Random
-		RandomFactionMembers: allies, soviet
+		RandomFactionMembers: usa, russia
 		Side: Random
 		Description: A random country.
 	ResourceType@ore:
@@ -88,7 +100,7 @@ World:
 	MPStartUnits@mcvonly:
 		Class: none
 		ClassName: MCV Only
-		Factions: allies, soviet
+		Factions: allies, soviet, usa, russia
 		BaseActor: mcv
 	MPStartUnits@lightallies:
 		Class: light

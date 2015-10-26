@@ -473,6 +473,7 @@ strategic: strategic.png
 flags: buttons.png
 	soviet: 0,112,30,15
 	allies: 30,112,30,15
+	usa: 30,112,30,15
 	Random: 60,112,30,15
 	spectator: 60,112,30,15
 	

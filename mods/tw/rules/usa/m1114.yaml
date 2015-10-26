@@ -1,0 +1,38 @@
+M1114:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 10
+		Prerequisites: ~vehicles.usa, ~techlevel.low
+	RenderSprites:
+		Image: JEEP
+	Valued:
+		Cost: 500
+	Tooltip:
+		Name: Ranger
+		Description: M1114 HMMWV.\n  .50 cal Heavy Machine Gun
+	Health:
+		HP: 150
+	Armor:
+		Type: Light
+	Mobile:
+		ROT: 10
+		Speed: 170
+	RevealsShroud:
+		Range: 10c0
+	Turreted:
+		ROT: 10
+		Offset: 0,0,85
+	Armament:
+		Weapon: M60mg
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithTurret:
+	AutoTarget:
+	Cargo:
+		Types: Infantry
+		MaxWeight: 1
+		PipCount: 1
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded

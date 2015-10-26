@@ -1,0 +1,38 @@
+M3A3:
+	Inherits: ^Tank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~vehicles.usa, ~techlevel.medium
+	RenderSprites:
+		Image: 1TNK
+	Valued:
+		Cost: 750
+	Tooltip:
+		Name: M3A3 Bradley CFV
+        Description: M3A3 Cavalry Fighting Vehicle.\n  25mm Chain Gun\n  2x TOW Anti-Tank Missiles
+	Health:
+		HP: 220
+	Armor:
+		Type: Heavy
+	Mobile:
+		Speed: 128
+		Crushes: wall, mine, crate, infantry
+	RevealsShroud:
+		Range: 5c0
+	Turreted:
+		ROT: 5
+	Armament:
+		Weapon: 25mm
+		Recoil: 85
+		RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithTurret:
+	AutoTarget:
+	SpawnActorOnDeath:
+		Actor: 1TNK.Husk
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded

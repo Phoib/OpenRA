@@ -238,7 +238,7 @@ HARV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
-		Prerequisites: proc, ~techlevel.infonly
+		Prerequisites: proc, ~techlevel.infonly, ~vehicles.allies, ~vehicles.soviet
 		InitialActivity: FindResources
 	Valued:
 		Cost: 1100
@@ -283,7 +283,7 @@ MCV:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 90
-		Prerequisites: fix, ~techlevel.medium
+		Prerequisites: fix, ~techlevel.medium, ~vehicles.allies, ~vehicles.soviet
 	CustomBuildTimeValue:
 		Value: 2000
 	Valued:
@@ -462,7 +462,7 @@ TRUK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
-		Prerequisites: weap, ~techlevel.low
+		Prerequisites: weap, ~techlevel.low, ~vehicles.allies, ~vehicles.soviet
 	Valued:
 		Cost: 500
 	Tooltip:
@@ -486,7 +486,7 @@ MGG:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 160
-		Prerequisites: atek, ~techlevel.unrestricted
+		Prerequisites: atek, ~techlevel.unrestricted, ~vehicles.allies, ~vehicles.soviet
 	Valued:
 		Cost: 1200
 	Tooltip:
@@ -519,7 +519,7 @@ MRJ:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 150
-		Prerequisites: atek, ~vehicles.allies, ~techlevel.unrestricted
+		Prerequisites: atek, ~vehicles.allies, ~techlevel.unrestricted, ~vehicles.soviet
 	Health:
 		HP: 220
 	Armor:
@@ -545,7 +545,7 @@ TTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 180
-		Prerequisites: tsla, stek, ~techlevel.unrestricted
+		Prerequisites: tsla, stek, ~techlevel.unrestricted, ~vehicles.allies, ~vehicles.soviet
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -614,7 +614,7 @@ DTRK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 170
-		Prerequisites: stek, ~techlevel.unrestricted
+		Prerequisites: stek, ~techlevel.unrestricted, ~vehicles.allies, ~vehicles.soviet
 	Valued:
 		Cost: 2500
 	Tooltip:
@@ -644,7 +644,7 @@ CTNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 210
-		Prerequisites: atek, pdox, ~techlevel.unrestricted
+		Prerequisites: atek, pdox, ~techlevel.unrestricted, ~vehicles.allies, ~vehicles.soviet
 	Valued:
 		Cost: 1350
 	Tooltip:
@@ -707,7 +707,7 @@ STNK:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 140
-		Prerequisites: atek, ~techlevel.unrestricted
+		Prerequisites: atek, ~techlevel.unrestricted, ~vehicles.allies, ~vehicles.soviet
 	Valued:
 		Cost: 1350
 	Tooltip:
