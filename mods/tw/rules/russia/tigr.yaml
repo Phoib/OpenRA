@@ -1,4 +1,4 @@
-M1114:
+TIGR:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
@@ -9,8 +9,8 @@ M1114:
 	Valued:
 		Cost: 500
 	Tooltip:
-		Name: M1114 HMMWV
-		Description: Scout.\n  .50 cal Heavy Machine Gun
+		Name: Tigr
+		Description: Scout.\n  7.62mm machine gun
 	Health:
 		HP: 150
 	Armor:

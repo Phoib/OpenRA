@@ -1,7 +1,7 @@
 Metadata:
 	Title: True War
 	Description: Fill in later
-	Version: 0.0.4
+	Version: 0.0.5
 	Author: Derelict Studios
 
 Folders:
@@ -52,6 +52,9 @@ Rules:
 	./mods/tw/rules/usa/m1a2.yaml
 	./mods/tw/rules/usa/m3a3.yaml
 	./mods/tw/rules/usa/m1114.yaml
+	./mods/tw/rules/russia/t14.yaml
+	./mods/tw/rules/russia/t15.yaml
+	./mods/tw/rules/russia/tigr.yaml
 
 Sequences:
 	./mods/tw/sequences/ships.yaml

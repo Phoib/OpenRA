@@ -1,16 +1,16 @@
-M1A2:
+T14:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
-		Prerequisites: ~vehicles.usa, ~techlevel.medium
+		Prerequisites: ~vehicles.russia, ~techlevel.medium
 	RenderSprites:
 		Image: 2TNK
 	Valued:
 		Cost: 1000
 	Tooltip:
-		Name: M1A2 Abrams
-		Description: Main Battle Tank.\n  120mm smoothbore cannon (vehicles)\n  7.62mm coaxial machinegun (infantry)\n  Chobham armor with DU modules
+        Name: T-14 Armata
+        Description: Main Battle Tank.\n  125mm smoothbore cannon (ground)\n   Sprinter anti tank missiles (helicopter)\n  Afghanit Active Protection System
 	Health:
 		HP: 450
 	Armor:
