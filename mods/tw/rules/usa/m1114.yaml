@@ -8,6 +8,8 @@ M1114:
 		Image: JEEP
 	Valued:
 		Cost: 500
+	CustomBuildTimeValue:
+		Value: 400
 	Tooltip:
 		Name: M1114 HMMWV
 		Description: Scout.\n  .50 cal Heavy Machine Gun
@@ -17,7 +19,7 @@ M1114:
 		Type: Light
 	Mobile:
 		ROT: 10
-		Speed: 170
+		Speed: 119
 	RevealsShroud:
 		Range: 10c0
 	Turreted:

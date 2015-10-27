@@ -8,6 +8,8 @@ M3A3:
 		Image: 1TNK
 	Valued:
 		Cost: 750
+	CustomBuildTimeValue:
+		Value: 600
 	Tooltip:
 		Name: M3A3 Bradley CFV
         Description: Cavalry Fighting Vehicle.\n  25mm chain gun (vehicles)\n  2x TOW Anti-Tank Missiles (tanks)\n  Spaced laminate armor with ERA
@@ -16,10 +18,10 @@ M3A3:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 128
+		Speed: 93
 		Crushes: wall, mine, crate, infantry
 	RevealsShroud:
-		Range: 5c0
+		Range: 8c0
 	Turreted:
 		ROT: 5
 	Armament:

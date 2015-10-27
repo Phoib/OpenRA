@@ -8,6 +8,8 @@ M1A2:
 		Image: 2TNK
 	Valued:
 		Cost: 1000
+	CustomBuildTimeValue:
+		Value: 800
 	Tooltip:
 		Name: M1A2 Abrams
 		Description: Main Battle Tank.\n  120mm smoothbore cannon (vehicles)\n  7.62mm coaxial machinegun (infantry)\n  Chobham armor with DU modules
@@ -16,10 +18,10 @@ M1A2:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 85
+		Speed: 99
 		Crushes: wall, mine, crate, infantry
 	RevealsShroud:
-		Range: 5c0
+		Range: 8c0
 	Turreted:
 		ROT: 5
 	Armament:

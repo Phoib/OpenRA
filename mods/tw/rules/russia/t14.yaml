@@ -8,6 +8,8 @@ T14A:
 		Image: 2TNK
 	Valued:
 		Cost: 1000
+	CustomBuildTimeValue:
+		Value: 800
 	Tooltip:
 		Name: T-14 Armata
 		Description: Main Battle Tank.\n  125mm smoothbore cannon (ground)\n  Sprinter anti tank missiles (helicopter)\n  Afghanit Active Protection System
@@ -16,10 +18,10 @@ T14A:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 85
+		Speed: 108
 		Crushes: wall, mine, crate, infantry
 	RevealsShroud:
-		Range: 5c0
+		Range: 8c0
 	Turreted:
 		ROT: 5
 	Armament:

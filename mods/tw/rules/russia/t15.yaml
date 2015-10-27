@@ -8,6 +8,8 @@ T15A:
 		Image: 1TNK
 	Valued:
 		Cost: 750
+	CustomBuildTimeValue:
+		Value: 600
 	Tooltip:
         Name: T-15 Armata
         Description: Infantry Fighting Vehicle.\n  30mm auto-cannon (vehicles)\n  4x Kornet anti tank missiles (tanks)\n  Afghanit Active Protection System
@@ -16,10 +18,10 @@ T15A:
 	Armor:
 		Type: Heavy
 	Mobile:
-		Speed: 128
+		Speed: 97
 		Crushes: wall, mine, crate, infantry
 	RevealsShroud:
-		Range: 5c0
+		Range: 8c0
 	Turreted:
 		ROT: 5
 	Armament:

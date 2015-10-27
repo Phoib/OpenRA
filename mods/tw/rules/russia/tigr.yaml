@@ -8,6 +8,8 @@ TIGR:
 		Image: JEEP
 	Valued:
 		Cost: 500
+	CustomBuildTimeValue:
+		Value: 400
 	Tooltip:
 		Name: Tigr
 		Description: Scout.\n  7.62mm machine gun
@@ -17,7 +19,7 @@ TIGR:
 		Type: Light
 	Mobile:
 		ROT: 10
-		Speed: 170
+		Speed: 174
 	RevealsShroud:
 		Range: 10c0
 	Turreted:
