@@ -3,7 +3,7 @@ TIGR:
 	Buildable:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
-		Prerequisites: ~vehicles.usa, ~techlevel.low
+		Prerequisites: ~vehicles.russia, ~techlevel.low
 	RenderSprites:
 		Image: JEEP
 	Valued:

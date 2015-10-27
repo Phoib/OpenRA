@@ -1,4 +1,4 @@
-M3A3:
+T15A:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle

@@ -1,4 +1,4 @@
-T14:
+T14A:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
@@ -9,8 +9,8 @@ T14:
 	Valued:
 		Cost: 1000
 	Tooltip:
-        Name: T-14 Armata
-        Description: Main Battle Tank.\n  125mm smoothbore cannon (ground)\n   Sprinter anti tank missiles (helicopter)\n  Afghanit Active Protection System
+		Name: T-14 Armata
+		Description: Main Battle Tank.\n  125mm smoothbore cannon (ground)\n  Sprinter anti tank missiles (helicopter)\n  Afghanit Active Protection System
 	Health:
 		HP: 450
 	Armor:
