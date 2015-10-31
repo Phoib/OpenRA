@@ -1,0 +1,116 @@
+m242_25mm:
+	ReloadDelay: 75
+	Burst: 5
+	Range: 15c0
+	Report: CANNON2.AUD
+	Projectile: Bullet
+		Speed: 853
+		Image: 50CAL
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 16
+		Versus:
+			None: 30
+			Wood: 40
+			Heavy: 40
+			Concrete: 30
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3EffGround: CreateEffect
+		Explosion: small_explosion
+		InvalidImpactTypes: Water
+	Warhead@4EffWater: CreateEffect
+		Explosion: small_splash
+		ValidImpactTypes: Water
+
+m256_120mm:
+	ReloadDelay: 250
+	Range: 20c0
+	Report: CANNON1.AUD
+	InvalidTargets: Air, Infantry
+	Projectile: Bullet
+		Speed: 982
+		Image: 120MM
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 490
+		InvalidTargets: Air, Infantry
+		Versus:
+			None: 20
+			Wood: 75
+			Light: 175
+			Heavy: 100
+			Concrete: 100
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3EffGround: CreateEffect
+		Explosion: small_explosion
+		ImpactSound: kaboom12.aud
+		InvalidImpactTypes: Water
+	Warhead@4EffWater: CreateEffect
+		Explosion: small_splash
+		ImpactSound: splash9.aud
+		ValidImpactTypes: Water
+
+tow_2b:
+	ReloadDelay: 750
+	Range: 21c0
+	MinRange: 0c512
+	Report: MISSILE6.AUD
+	ValidTargets: Ground, Water
+	Projectile: Missile
+		MaximumLaunchSpeed: 613
+		Arm: 2
+		Blockable: false
+		TrailImage: smokey
+		ContrailLength: 10
+		Inaccuracy: 128
+		Image: DRAGON
+		HorizontalRateOfTurn: 5
+		RangeLimit: 55
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 1000
+		ValidTargets: Ground, Water
+		Versus:
+			None: 10
+			Wood: 75
+			Light: 35
+			Concrete: 20
+		DamageTypes: Prone50Percent, TriggerProne, ExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: med_explosion
+		ImpactSound: kaboom25.aud
+		InvalidImpactTypes: Water
+	Warhead@4EffWater: CreateEffect
+		Explosion: med_splash
+		ImpactSound: splash9.aud
+		ValidImpactTypes: Water
+
+m2_50cal:
+	ReloadDelay: 30
+	Range: 9c0
+	Report: PILLBOX1.AUD
+	Burst: 5
+	Projectile: Bullet
+		Speed: 9c682
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 15
+		Versus:
+			Wood: 10
+			Light: 30
+			Heavy: 10
+			Concrete: 10
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piffs
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: water_piffs
+		ValidImpactTypes: Water
+

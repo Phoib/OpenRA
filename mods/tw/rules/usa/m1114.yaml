@@ -14,7 +14,7 @@ M1114:
 		Name: M1114 HMMWV
 		Description: Scout.\n  .50 cal Heavy Machine Gun
 	Health:
-		HP: 150
+		HP: 200
 	Armor:
 		Type: Light
 	Mobile:
@@ -26,7 +26,7 @@ M1114:
 		ROT: 10
 		Offset: 0,0,85
 	Armament:
-		Weapon: M60mg
+		Weapon: m2_50cal
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:

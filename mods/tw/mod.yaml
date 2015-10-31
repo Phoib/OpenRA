@@ -132,6 +132,8 @@ Weapons:
 	./mods/tw/weapons/other.yaml
 	./mods/tw/weapons/smallcaliber.yaml
 	./mods/tw/weapons/superweapons.yaml
+	./mods/tw/weapons/usweapons.yaml
+	./mods/tw/weapons/russianweapons.yaml
 	
 Voices:
 	./mods/tw/audio/voices.yaml

@@ -14,7 +14,7 @@ T15A:
         Name: T-15 Armata
         Description: Infantry Fighting Vehicle.\n  30mm auto-cannon (vehicles)\n  4x Kornet anti tank missiles (tanks)\n  Afghanit Active Protection System
 	Health:
-		HP: 220
+		HP: 800
 	Armor:
 		Type: Heavy
 	Mobile:
@@ -24,11 +24,18 @@ T15A:
 		Range: 8c0
 	Turreted:
 		ROT: 5
-	Armament:
-		Weapon: 25mm
+	Armament@PRIMARY:
+		Weapon: 2a42_30mm
 		Recoil: 85
 		RecoilRecovery: 25
 		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: kornet_em
+		LocalOffset: -85,384,340, -85,-384,340
+		LocalYaw: -100,100
+		Recoil: 43
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:

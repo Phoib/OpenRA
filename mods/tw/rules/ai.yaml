@@ -44,28 +44,14 @@ Player:
 			fix: 0.1%
 			dome: 10%
 		UnitsToBuild:
-			e1: 50%
-			e2: 20%
-			e3: 10%
-			e4: 2%
-			dog: 2%
-			shok: 2%
-			harv: 10%
-			apc: 30%
-			jeep: 40%
-			arty: 15%
-			v2rl: 40%
-			ftrk: 50%
-			1tnk: 70%
-			2tnk: 25%
-			3tnk: 50%
-			4tnk: 10%
-			ttnk: 10%
-			stnk: 5%
+			m1a2: 50%
+			m3a3: 50%
+			t14a: 50%
+			t15a: 50%
 		UnitLimits:
 			dog: 4
 			harv: 8
-		SquadSize: 20
+		SquadSize: 4
 		SupportPowerDecision@spyplane:
 			OrderName: SovietSpyPlane
 			MinimumAttractiveness: 1

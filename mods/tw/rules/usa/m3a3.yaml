@@ -14,9 +14,9 @@ M3A3:
 		Name: M3A3 Bradley CFV
         Description: Cavalry Fighting Vehicle.\n  25mm chain gun (vehicles)\n  2x TOW Anti-Tank Missiles (tanks)\n  Spaced laminate armor with ERA
 	Health:
-		HP: 220
+		HP: 800
 	Armor:
-		Type: Heavy
+		Type: Medium
 	Mobile:
 		Speed: 93
 		Crushes: wall, mine, crate, infantry
@@ -24,11 +24,18 @@ M3A3:
 		Range: 8c0
 	Turreted:
 		ROT: 5
-	Armament:
-		Weapon: 25mm
+	Armament@PRIMARY:
+		Weapon: m242_25mm
 		Recoil: 85
 		RecoilRecovery: 25
 		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: tow_2b
+		LocalOffset: -85,384,340, -85,-384,340
+		LocalYaw: -100,100
+		Recoil: 43
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
