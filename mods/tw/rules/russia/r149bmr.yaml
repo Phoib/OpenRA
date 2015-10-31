@@ -1,0 +1,28 @@
+R149BMR:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~vehicles.russia, ~techlevel.low
+	RenderSprites:
+		Image: TRUK
+	Valued:
+		Cost: 500
+	Tooltip:
+        Name: R-149BMR
+		Description: Command and Staff vehicle.\n  Unarmed
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 119
+	RevealsShroud:
+		Range: 10c0
+	Power:
+		Amount: 100
+	ProvidesRadar:
+	RequiresPower:
+	CashTrickler:
+		Period: 375
+		Amount: 250

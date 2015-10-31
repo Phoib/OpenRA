@@ -2,7 +2,7 @@ M3A3:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.usa, ~techlevel.medium
 	RenderSprites:
 		Image: 1TNK
@@ -43,5 +43,7 @@ M3A3:
 	AutoTarget:
 	SpawnActorOnDeath:
 		Actor: 1TNK.Husk
+	Power:
+        Amount: -20
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded

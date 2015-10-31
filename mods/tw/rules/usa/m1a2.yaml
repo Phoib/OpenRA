@@ -2,7 +2,7 @@ M1A2:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.usa, ~techlevel.medium
 	RenderSprites:
 		Image: 2TNK
@@ -34,6 +34,8 @@ M1A2:
 	WithMuzzleOverlay:
 	WithTurret:
 	AutoTarget:
+	Power:
+        Amount: -20
 	SpawnActorOnDeath:
 		Actor: 2TNK.Husk
 	SelectionDecorations:

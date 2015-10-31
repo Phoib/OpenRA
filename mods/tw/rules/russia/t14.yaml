@@ -2,7 +2,7 @@ T14A:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.russia, ~techlevel.medium
 	RenderSprites:
 		Image: 2TNK
@@ -38,5 +38,7 @@ T14A:
 		Actor: 2TNK.Husk
 	SelectionDecorations:
 		VisualBounds: 28,28
+	Power:
+        Amount: -30
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded

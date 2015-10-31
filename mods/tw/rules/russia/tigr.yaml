@@ -36,5 +36,7 @@ TIGR:
 		Types: Infantry
 		MaxWeight: 1
 		PipCount: 1
+	Power:
+        Amount: -10
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded

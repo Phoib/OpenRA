@@ -2,7 +2,7 @@ T15A:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.russia, ~techlevel.medium
 	RenderSprites:
 		Image: 1TNK
@@ -43,5 +43,7 @@ T15A:
 	AutoTarget:
 	SpawnActorOnDeath:
 		Actor: 1TNK.Husk
+	Power:
+        Amount: -20
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded

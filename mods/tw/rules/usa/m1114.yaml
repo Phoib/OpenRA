@@ -32,6 +32,8 @@ M1114:
 	WithMuzzleOverlay:
 	WithTurret:
 	AutoTarget:
+	Power:
+        Amount: -10
 	Cargo:
 		Types: Infantry
 		MaxWeight: 1

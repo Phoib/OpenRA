@@ -1,0 +1,28 @@
+M4C2V:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 20
+		Prerequisites: ~vehicles.usa, ~techlevel.low
+	RenderSprites:
+		Image: APC
+	Valued:
+		Cost: 500
+	Tooltip:
+        Name: M4
+		Description: Command and Controll vehicle.\n  Unarmed
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	Mobile:
+		Speed: 119
+	RevealsShroud:
+		Range: 10c0
+	Power:
+		Amount: 100
+	ProvidesRadar:
+	RequiresPower:
+	CashTrickler:
+		Period: 375
+		Amount: 250

@@ -13,13 +13,13 @@
 		Index: 255, 16, 32, 48, 64, 80, 96, 112, 128, 144, 160, 176, 192, 208, 224, 240, 20, 40, 56, 65, 97, 130, 148, 194, 24, 33, 66, 132, 28, 41, 67, 134, 1, 2, 4, 8, 3, 6, 12, 9, 7, 14, 13, 11, 5, 10, 15, 255
 		UseExtendedIndex: true
 	Faction@0:
-		Name: USA
+		Name: OldAllies
 		InternalName: allies
 		Side: NATO
 		Description: United States of America: Founding member of NATO
 		Selectable: False
 	Faction@1:
-		Name: Russia
+		Name: OldSoviets
 		InternalName: soviet
 		Side: SCO
         Description: Russian Federation: Founding member of SCO
@@ -80,9 +80,9 @@ World:
 		QuantizedFacings: 16
 		Minimum: 1
 		Maximum: 3
-		SpawnInterval: 3000
+		SpawnInterval: 300000
 		WaterChance: 20
-		InitialSpawnDelay: 1500
+		InitialSpawnDelay: 15000000
 	DomainIndex:
 	SmudgeLayer@SCORCH:
 		Type: Scorch
@@ -118,6 +118,22 @@ World:
 		SupportActors: e1,e1,e1,e3,e3,apc,ftrk
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
+	MPStartUnits@lightusa:
+		Class: light
+		ClassName: Light Support
+		Factions: usa
+		BaseActor: mcv
+		SupportActors: m1114,m1114,m4c2v
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@lightrussia:
+		Class: light
+		ClassName: Light Support
+		Factions: russia
+		BaseActor: mcv
+		SupportActors: tigr,tigr,r149bmr
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
 	MPStartUnits@heavyallies:
 		Class: heavy
 		ClassName: Heavy Support
@@ -132,6 +148,22 @@ World:
 		Factions: soviet
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,apc,ftrk,3tnk,3tnk
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@heavyusa:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: usa
+		BaseActor: mcv
+		SupportActors: m1114,m1114,m4c2v,m4c2v,m1a2,m1a2,m3a3,m3a3
+		InnerSupportRadius: 3
+		OuterSupportRadius: 5
+	MPStartUnits@heavyrussia:
+		Class: heavy
+		ClassName: Heavy Support
+		Factions: russia
+		BaseActor: mcv
+		SupportActors: tigr,tigr,r149bmr,r149bmr,t14a,t14a,t15a,t15a
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartLocations:
