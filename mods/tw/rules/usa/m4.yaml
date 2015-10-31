@@ -12,9 +12,9 @@ M4C2V:
         Name: M4
 		Description: Command and Controll vehicle.\n  Unarmed
 	Health:
-		HP: 100
+		HP: 600
 	Armor:
-		Type: Light
+		Type: Medium
 	Mobile:
 		Speed: 119
 	RevealsShroud:
