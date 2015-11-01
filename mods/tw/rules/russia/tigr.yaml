@@ -4,14 +4,12 @@ TIGR:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~vehicles.russia, ~techlevel.low
-	RenderSprites:
-		Image: JEEP
 	Valued:
 		Cost: 500
 	CustomBuildTimeValue:
 		Value: 400
 	Tooltip:
-		Name: Tigr
+        Name: Tigr-M
 		Description: Scout.\n  7.62mm machine gun
 	Health:
 		HP: 200

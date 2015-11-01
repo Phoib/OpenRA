@@ -4,8 +4,6 @@ M1A2:
 		Queue: Vehicle
 		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.usa, ~techlevel.medium
-	RenderSprites:
-		Image: 2TNK
 	Valued:
 		Cost: 1000
 	CustomBuildTimeValue:

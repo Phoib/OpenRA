@@ -1,0 +1,46 @@
+m3a3:
+	idle: 1tnk
+		Facings: 32
+	turret: 1tnk
+		Start: 32
+		Facings: 32
+	muzzle: gunfire2
+		Length: 2
+	icon: m3a3icon
+
+m1a2:
+	idle: 2tnk
+		Facings: 32
+	turret: 2tnk
+		Start: 32
+		Facings: 32
+	muzzle: gunfire2
+		Length: 5
+	icon: m1a2icon
+
+m1114:
+	idle: jeep
+		Facings: 32
+	turret: jeep
+		Start: 32
+		Facings: 32
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	unload: jeep
+		Facings: 32
+	icon: m1114icon
+
+m4c2v:
+	idle: apc
+		Facings: 32
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	open: apc
+		Start: 32
+		Length: 3
+	unload: apc
+		Start: 32
+	icon: m4icon
+

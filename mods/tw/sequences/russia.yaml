@@ -1,0 +1,46 @@
+t15a:
+	idle: 1tnk
+		Facings: 32
+	turret: 1tnk
+		Start: 32
+		Facings: 32
+	muzzle: gunfire2
+		Length: 2
+	icon: t15aicon
+
+t14a:
+	idle: 2tnk
+		Facings: 32
+	turret: 2tnk
+		Start: 32
+		Facings: 32
+	muzzle: gunfire2
+		Length: 5
+	icon: t14aicon
+
+tigr:
+	idle: jeep
+		Facings: 32
+	turret: jeep
+		Start: 32
+		Facings: 32
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	unload: jeep
+		Facings: 32
+	icon: tigricon
+
+r149bmr:
+	idle: apc
+		Facings: 32
+	muzzle: minigun
+		Length: 6
+		Facings: 8
+	open: apc
+		Start: 32
+		Length: 3
+	unload: apc
+		Start: 32
+	icon: r149bmricon
+

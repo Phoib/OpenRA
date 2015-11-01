@@ -4,8 +4,6 @@ R149BMR:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.russia, ~techlevel.low
-	RenderSprites:
-		Image: TRUK
 	Valued:
 		Cost: 500
 	Tooltip:

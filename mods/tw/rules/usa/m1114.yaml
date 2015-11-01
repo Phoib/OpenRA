@@ -4,8 +4,6 @@ M1114:
 		Queue: Vehicle
 		BuildPaletteOrder: 10
 		Prerequisites: ~vehicles.usa, ~techlevel.low
-	RenderSprites:
-		Image: JEEP
 	Valued:
 		Cost: 500
 	CustomBuildTimeValue:

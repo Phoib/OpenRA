@@ -4,8 +4,6 @@ T15A:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.russia, ~techlevel.medium
-	RenderSprites:
-		Image: 1TNK
 	Valued:
 		Cost: 750
 	CustomBuildTimeValue:

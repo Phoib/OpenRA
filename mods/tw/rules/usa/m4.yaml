@@ -4,13 +4,11 @@ M4C2V:
 		Queue: Vehicle
 		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.usa, ~techlevel.low
-	RenderSprites:
-		Image: APC
 	Valued:
 		Cost: 500
 	Tooltip:
         Name: M4
-		Description: Command and Controll vehicle.\n  Unarmed
+		Description: Command and Control vehicle.\n  Unarmed
 	Health:
 		HP: 600
 	Armor:

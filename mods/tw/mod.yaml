@@ -1,7 +1,7 @@
 Metadata:
 	Title: True War
 	Description: Fill in later
-	Version: 0.0.7
+	Version: 0.0.8
 	Author: Derelict Studios
 
 Folders:
@@ -66,6 +66,8 @@ Sequences:
 	./mods/tw/sequences/aircraft.yaml
 	./mods/tw/sequences/misc.yaml
 	./mods/tw/sequences/decorations.yaml
+	./mods/tw/sequences/usa.yaml
+	./mods/tw/sequences/russia.yaml
 
 TileSets:
 	./mods/tw/tilesets/snow.yaml

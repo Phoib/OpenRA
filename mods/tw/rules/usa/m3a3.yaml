@@ -4,8 +4,6 @@ M3A3:
 		Queue: Vehicle
 		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.usa, ~techlevel.medium
-	RenderSprites:
-		Image: 1TNK
 	Valued:
 		Cost: 750
 	CustomBuildTimeValue:
