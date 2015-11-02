@@ -1,7 +1,7 @@
 Metadata:
 	Title: True War
-	Description: Fill in later
-	Version: 0.0.8
+	Description: Realistic modern warfare simulator, based on the OpenRA engine.
+	Version: 0.0.9
 	Author: Derelict Studios
 
 Folders:
@@ -153,7 +153,7 @@ Translations:
 
 LoadScreen: LogoStripeLoadScreen
 	Image: ./mods/tw/uibits/loadscreen.png
-	Text: Filling Crates..., Charging Capacitors..., Reticulating Splines..., Planting Trees..., Building Bridges..., Aging Empires..., Compiling EVA..., Constructing Pylons..., Activating Skynet..., Splitting Atoms...
+	Text: Starting Engines..., Checking Ammunition..., Calibrating Sights..., Checking in..., Cleaning Barrels..., Lubricating Weapons...
 
 ContentInstaller:
 	TestFiles: ^Content/ra/allies.mix, ^Content/ra/conquer.mix, ^Content/ra/interior.mix, ^Content/ra/redalert.mix, ^Content/ra/russian.mix, ^Content/ra/snow.mix, ^Content/ra/sounds.mix, ^Content/ra/temperat.mix
