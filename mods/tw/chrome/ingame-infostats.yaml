@@ -24,7 +24,7 @@ Container@SKIRMISH_STATS:
 			Font: Bold
 			Text: Destroy all opposition!
 			Disabled: yes
-			TextColorDisabled: 255,255,255
+			TextColorDisabled: FFFFFF
 		Container@STATS_HEADERS:
 			X: 22
 			Y: 80
@@ -82,6 +82,12 @@ Container@SKIRMISH_STATS:
 							X: 10
 							Width: 150
 							Height: 25
+						ClientTooltipRegion@CLIENT_REGION:
+							TooltipContainer: TOOLTIP_CONTAINER
+							Template: INGAME_CLIENT_TOOLTIP
+							X: 10
+							Width: 150
+							Height: 25
 						Image@FACTIONFLAG:
 							X: 159
 							Y: 6
@@ -106,4 +112,3 @@ Container@SKIRMISH_STATS:
 							Width: 70
 							Height: 25
 							Align: Center
-

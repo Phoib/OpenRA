@@ -1,8 +1,11 @@
 Metadata:
 	Title: True War
 	Description: Realistic modern warfare simulator, based on the OpenRA engine.
-	Version: 0.1
-	Author: Derelict Studios
+	Version: 0.1.0.1
+	Author: Derelict Studios Europe
+
+RequiresMods:
+	modchooser: {DEV_VERSION}
 
 Folders:
 	.
@@ -13,8 +16,8 @@ Folders:
 	~^Content/ra
 
 MapFolders:
-	./mods/tw/maps: System
-	~^maps/tw: User
+	./mods/tw/maps@System
+	~^maps/tw@User
 
 Packages:
 	~main.mix
@@ -83,7 +86,7 @@ Chrome:
 
 Assemblies:
 	./mods/common/OpenRA.Mods.Common.dll
-	./mods/tw/OpenRA.Mods.RA.dll
+	./mods/ra/OpenRA.Mods.RA.dll
 	./mods/cnc/OpenRA.Mods.Cnc.dll
 
 ChromeLayout:
@@ -219,9 +222,11 @@ Missions:
 
 MapGrid:
 	TileSize: 24,24
-	Type: Rectangle
+	Type: Rectangular
 
 SupportsMapsFrom: ra
+
+SoundFormats: Aud, Wav
 
 SpriteFormats: ShpD2, ShpTD, TmpRA, TmpTD, ShpTS
 

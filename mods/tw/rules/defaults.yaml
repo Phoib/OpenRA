@@ -418,7 +418,7 @@
 	Guardable:
 		Range: 3c0
 	FrozenUnderFog:
-	GpsRemoveFrozenActor:
+	FrozenUnderFogUpdatedByGps:
 	Tooltip:
 		GenericName: Structure
 	Demolishable:
@@ -485,7 +485,7 @@
 		SellSounds: cashturn.aud
 	Guardable:
 	FrozenUnderFog:
-	GpsRemoveFrozenActor:
+	FrozenUnderFogUpdatedByGps:
 
 ^TechBuilding:
 	Inherits: ^BasicBuilding
@@ -511,7 +511,12 @@
 		DamageThreshold: 90
 	RevealsShroud:
 		Range: 4c0
-	Fake:
+    WithDecoration@fake:
+        RequiresSelection: true
+        Image: pips
+        Sequence: tag-fake
+        ReferencePoint: Top
+        ZOffset: 256
 	-EmitInfantryOnSell:
 	-MustBeDestroyed:
 

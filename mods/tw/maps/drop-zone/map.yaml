@@ -1,4 +1,4 @@
-MapFormat: 7
+MapFormat: 8
 
 RequiresMod: ra
 
@@ -238,7 +238,7 @@ Rules:
 		Explodes:
 			Weapon: CrateNuke
 			EmptyWeapon: CrateNuke
-		DemoTruck:
+		AttackSuicides:
 	SHOK:
 		Health:
 			HP: 800

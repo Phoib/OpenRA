@@ -28,7 +28,7 @@ M1114:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
-	WithTurret:
+	WithSpriteTurret:
 	AutoTarget:
 	Power:
         Amount: -10

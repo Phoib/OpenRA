@@ -28,7 +28,7 @@ TIGR:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
-	WithTurret:
+	WithSpriteTurret:
 	AutoTarget:
 	Cargo:
 		Types: Infantry

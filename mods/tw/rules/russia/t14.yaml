@@ -30,7 +30,7 @@ T14A:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
-	WithTurret:
+	WithSpriteTurret:
 	AutoTarget:
 	SpawnActorOnDeath:
 		Actor: 2TNK.Husk

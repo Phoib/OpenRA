@@ -1,12 +1,29 @@
 Background@SIMPLE_TOOLTIP:
 	Logic: SimpleTooltipLogic
 	Background: dialog4
-	Height: 29
+	Height: 32
 	Children:
 		Label@LABEL:
 			X: 7
 			Y: 2
 			Height: 23
+			Font: Bold
+
+Background@TWO_LINE_TOOLTIP:
+	Logic: ButtonTooltipLogic
+	Background: dialog4
+	Height: 52
+	Children:
+		Label@LABEL:
+			X: 7
+			Y: 2
+			Height: 46
+			Font: Bold
+		Label@HOTKEY:
+			Visible: false
+			Y: 2
+			Height: 23
+			TextColor: FFFF00
 			Font: Bold
 
 Background@BUTTON_TOOLTIP:
@@ -23,7 +40,7 @@ Background@BUTTON_TOOLTIP:
 			Visible: false
 			Y: 2
 			Height: 23
-			TextColor: 255,255,0
+			TextColor: FFFF00
 			Font: Bold
 
 Background@WORLD_TOOLTIP:
@@ -113,6 +130,30 @@ Background@CLIENT_TOOLTIP:
 			Height: 10
 			Font: TinyBold
 
+Background@INGAME_CLIENT_TOOLTIP:
+	Logic: ClientTooltipLogic
+	Background: dialog4
+	Height: 41
+	Width: 7
+	Children:
+		Label@ADMIN:
+			Y: 4
+			Height: 18
+			Font: Bold
+			Text: Game Admin
+			Align: Center
+		Label@IP:
+			Y: 7
+			Width: 5
+			Height: 10
+			Font: TinyBold
+			Align: Center
+		Label@LOCATION:
+			Y: 19
+			Height: 10
+			Font: TinyBold
+			Align: Center
+
 Background@PRODUCTION_TOOLTIP:
 	Logic: ProductionTooltipLogic
 	Background: dialog4
@@ -128,7 +169,7 @@ Background@PRODUCTION_TOOLTIP:
 			Visible: false
 			Y: 2
 			Height: 23
-			TextColor: 255,255,0
+			TextColor: FFFF00
 			Font: Bold
 		Label@REQUIRES:
 			X: 7
@@ -185,7 +226,7 @@ Background@SUPPORT_POWER_TOOLTIP:
 			Visible: false
 			Y: 2
 			Height: 20
-			TextColor: 255,255,0
+			TextColor: FFFF00
 			Font: Bold
 		Label@TIME:
 			Y: 8

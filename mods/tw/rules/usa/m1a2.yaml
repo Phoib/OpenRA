@@ -30,7 +30,7 @@ M1A2:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
-	WithTurret:
+	WithSpriteTurret:
 	AutoTarget:
 	Power:
         Amount: -20

@@ -4,6 +4,7 @@ GenericVoice:
 		england: .v01,.v03
 		france: .v01,.v03
 		germany: .v01,.v03
+		usa: .v01,.v03
 		soviet: .r01,.r03
 		russia: .r01,.r03
 		ukraine: .r01,.r03
@@ -21,6 +22,7 @@ VehicleVoice:
 		england: .v00,.v02
 		france: .v00,.v02
 		germany: .v00,.v02
+		usa: .v00,.v02
 		soviet: .r00,.r02
 		russia: .r00,.r02
 		ukraine: .r00,.r02

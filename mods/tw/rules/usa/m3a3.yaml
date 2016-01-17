@@ -37,7 +37,7 @@ M3A3:
 		MuzzleSequence: muzzle
 	AttackTurreted:
 	WithMuzzleOverlay:
-	WithTurret:
+	WithSpriteTurret:
 	AutoTarget:
 	SpawnActorOnDeath:
 		Actor: 1TNK.Husk
