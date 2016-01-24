@@ -44,3 +44,12 @@ m4c2v:
 		Start: 32
 	icon: m4icon
 
+m109a7:
+	idle: 2tnk
+		Facings: 32
+	turret: mgun
+		Facings: 32
+	muzzle: gunfire2
+		Length: 5
+	icon: m109a7icon
+

@@ -9,7 +9,7 @@ t15a:
 	icon: t15aicon
 
 t14a:
-	idle: 2tnk
+	idle: 3tnk
 		Facings: 32
 	turret: 2tnk
 		Start: 32
@@ -44,3 +44,11 @@ r149bmr:
 		Start: 32
 	icon: r149bmricon
 
+2s35:
+	idle: 3tnk
+		Facings: 32
+	turret: mgun
+		Facings: 32
+	muzzle: gunfire2
+		Length: 5
+	icon: 2s35icon

@@ -114,3 +114,35 @@ pkp_762mm:
 		Explosion: water_piffs
 		ValidImpactTypes: Water
 
+2a88_152mm:
+	ReloadDelay: 94
+	Range: 350c0
+	Report: TANK5.AUD
+	Projectile: Bullet
+		Speed: 982
+		Blockable: false
+		Angle: 62
+		Inaccuracy: 1c682
+		Image: 120MM
+		ContrailLength: 30
+	Warhead@1Dam: SpreadDamage
+		Spread: 426
+		Damage: 2000
+		Versus:
+			None: 90
+			Wood: 75
+			Light: 60
+			Heavy: 25
+			Concrete: 50
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: artillery_explosion
+		ImpactSound: kaboom15.aud
+		InvalidImpactTypes: Water
+	Warhead@4EffWater: CreateEffect
+		Explosion: med_splash
+		ImpactSound: splash9.aud
+		ValidImpactTypes: Water
+

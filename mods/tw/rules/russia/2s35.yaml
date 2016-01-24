@@ -1,0 +1,42 @@
+2S35:
+	Inherits: ^Tank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~vehicles.russia, ~techlevel.medium
+	Valued:
+		Cost: 1500
+	CustomBuildTimeValue:
+		Value: 1000
+	Tooltip:
+		Name: 2S35 Koalitsiya
+		Description: Self propelled howitzer.\n  152mm howitzer\n  Steel armor
+	Health:
+		HP: 600
+	Armor:
+		Type: Medium
+	Mobile:
+		Speed: 75
+		Crushes: wall, mine, crate, infantry
+	RevealsShroud:
+		Range: 4c0
+	Turreted:
+		ROT: 5
+	Armament:
+		Weapon: 2a88_152mm
+		Recoil: 128
+		RecoilRecovery: 38
+		LocalOffset: 720,0,80
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	AutoTarget:
+	SpawnActorOnDeath:
+		Actor: 2TNK.Husk
+	SelectionDecorations:
+		VisualBounds: 28,28
+	Power:
+        Amount: -30
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded

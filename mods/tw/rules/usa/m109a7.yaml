@@ -1,0 +1,42 @@
+M109A7:
+	Inherits: ^Tank
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 50
+		Prerequisites: ~vehicles.usa, ~techlevel.medium
+	Valued:
+		Cost: 1500
+	CustomBuildTimeValue:
+		Value: 1000
+	Tooltip:
+		Name: M109A7
+		Description: Self propelled artillery.\n  155mm L/39 howitzer (vehicles)\n  Aluminum armor
+	Health:
+		HP: 600
+	Armor:
+		Type: Medium
+	Mobile:
+		Speed: 82
+		Crushes: wall, mine, crate, infantry
+	RevealsShroud:
+		Range: 4c0
+	Turreted:
+		ROT: 4
+	Armament:
+		Weapon: m284_155mm
+		Recoil: 128
+		RecoilRecovery: 38
+		LocalOffset: 720,0,80
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	AutoTarget:
+	Power:
+        Amount: -30
+    SpawnActorOnDeath:
+		Actor: 2TNK.Husk
+	SelectionDecorations:
+		VisualBounds: 28,28
+	ProducibleWithLevel:
+		Prerequisites: vehicles.upgraded
