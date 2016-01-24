@@ -1,0 +1,47 @@
+A10C:
+	Inherits: ^Plane
+	AttackBomber:
+		Armaments: gun, bombs
+		Guns: gun
+		Bombs: bombs
+	Armament@GUNS:
+		Name: gun
+		Weapon: gau8_30mm
+		LocalOffset: 1024,0,-85
+	WithMuzzleOverlay:
+	Armament@BOMBS:
+		Name: bombs
+		Weapon: cbu105
+		LocalOffset: 0,-256,-43, 0,256,-43
+	Health:
+		HP: 300
+	Armor:
+		Type: Heavy
+	Aircraft:
+		ROT: 5
+		Speed: 373
+		Repulsable: False
+		MaximumPitch: 56
+		AirborneUpgrades: airborne
+	-Selectable:
+	-Voiced:
+	-GainsExperience:
+	Tooltip:
+		Name: Badger
+	Contrail@1:
+		Offset: -432,560,0
+	Contrail@2:
+		Offset: -432,-560,0
+	SpawnActorOnDeath:
+		Actor: BADR.Husk
+	SmokeTrailWhenDamaged@0:
+		Offset: -432,560,0
+		Interval: 2
+	SmokeTrailWhenDamaged@1:
+		Offset: -432,-560,0
+		Interval: 2
+	-EjectOnDeath:
+	RejectsOrders:
+	RenderSprites:
+		Image: yak
+

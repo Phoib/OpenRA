@@ -1,7 +1,7 @@
 Metadata:
 	Title: True War
 	Description: Realistic modern warfare simulator, based on the OpenRA engine.
-	Version: 0.1.1
+	Version: 0.1.2
 	Author: Derelict Studios Europe
 
 RequiresMods:
@@ -57,11 +57,13 @@ Rules:
 	./mods/tw/rules/usa/m4.yaml
 	./mods/tw/rules/usa/m1114.yaml
 	./mods/tw/rules/usa/m109a7.yaml
+	./mods/tw/rules/usa/a10c.yaml
 	./mods/tw/rules/russia/t14.yaml
 	./mods/tw/rules/russia/t15.yaml
 	./mods/tw/rules/russia/tigr.yaml
 	./mods/tw/rules/russia/r149bmr.yaml
 	./mods/tw/rules/russia/2s35.yaml
+	./mods/tw/rules/russia/su34.yaml
 
 Sequences:
 	./mods/tw/sequences/ships.yaml

@@ -33,7 +33,7 @@ M109A7:
 	WithSpriteTurret:
 	AutoTarget:
 	Power:
-        Amount: -30
+        Amount: -50
     SpawnActorOnDeath:
 		Actor: 2TNK.Husk
 	SelectionDecorations:

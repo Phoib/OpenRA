@@ -24,3 +24,17 @@ R149BMR:
 	CashTrickler:
 		Period: 375
 		Amount: 250
+	AirstrikePower:
+		Icon: parabombs
+		ChargeTime: 180
+		QuantizedFacings: 8
+        Description: Su-34 Air Strike
+        LongDesc: Deploy a Su-34.\nAttacks KAB-500 gravity bombs
+        ;		SelectTargetSound: select1.aud
+        ;		InsufficientPowerSound: nopower1.aud
+        ;		IncomingSound: enemya.aud
+		UnitType: su34
+		DisplayBeacon: true
+		BeaconPoster: pbmbicon
+		DisplayRadarPing: True
+		CameraActor: camera

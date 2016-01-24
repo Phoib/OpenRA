@@ -146,3 +146,52 @@ m284_155mm:
 		ImpactSound: splash9.aud
 		ValidImpactTypes: Water
 
+gau8_30mm:
+	ReloadDelay: 2
+	Range: 6c0
+	MinRange: 1c0
+	Report: GUN13.AUD
+	Projectile: Bullet
+		Speed: 1c682
+		Blockable: false
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 120
+		Versus:
+			Wood: 100
+			Light: 100
+			Heavy: 100
+			Concrete: 25
+		DamageTypes: Prone50Percent, TriggerProne, BulletDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: piffs
+		InvalidImpactTypes: Water
+	Warhead@3EffWater: CreateEffect
+		Explosion: water_piffs
+		ValidImpactTypes: Water
+
+cbu105:
+	ValidTargets: Ground, Water
+	ReloadDelay: 4
+	Range: 3c0
+	Burst: 2
+	BurstDelay: 2
+	Projectile: GravityBomb
+		Image: BOMBLET
+	Warhead@1Dam: SpreadDamage
+		Spread: 341
+		Damage: 3000
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		ValidTargets: Ground, Water
+		Versus:
+			None: 100
+			Wood: 100
+			Light: 100
+			Heavy: 80
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Scorch
+	Warhead@3Eff: CreateEffect
+		Explosion: napalm
+		ImpactSound: kaboom15.aud
+

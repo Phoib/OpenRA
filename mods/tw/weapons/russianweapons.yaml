@@ -146,3 +146,32 @@ pkp_762mm:
 		ImpactSound: splash9.aud
 		ValidImpactTypes: Water
 
+kab500:
+	ValidTargets: Ground, Water
+	ReloadDelay: 1
+	Range: 5c0
+	Burst: 2
+	BurstDelay: 2
+	Projectile: GravityBomb
+		Image: BOMBLET
+	Warhead@1Dam: SpreadDamage
+		Spread: 341
+		Damage: 3000
+		Falloff: 1000, 368, 135, 50, 18, 7, 0
+		ValidTargets: Ground, Water
+		Versus:
+			None: 100
+			Wood: 100
+			Light: 100
+			Heavy: 80
+		DamageTypes: Prone50Percent, TriggerProne, FireDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: artillery_explosion
+		ImpactSound: kaboom15.aud
+		InvalidImpactTypes: Water
+	Warhead@4EffWater: CreateEffect
+		Explosion: small_splash
+		ImpactSound: splash9.aud
+		ValidImpactTypes: Water

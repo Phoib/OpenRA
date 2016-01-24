@@ -37,6 +37,6 @@
 	SelectionDecorations:
 		VisualBounds: 28,28
 	Power:
-        Amount: -30
+        Amount: -50
 	ProducibleWithLevel:
 		Prerequisites: vehicles.upgraded

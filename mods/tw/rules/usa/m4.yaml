@@ -24,3 +24,18 @@ M4C2V:
 	CashTrickler:
 		Period: 375
 		Amount: 250
+	AirstrikePower:
+		Icon: parabombs
+		ChargeTime: 210
+		SquadSize: 3
+		QuantizedFacings: 8
+        Description: A-10C Air Strike
+        LongDesc: Deploy a flight of A-10C.\nAttacks with 30mm cannon and cluster bombs.
+        ;		SelectTargetSound: select1.aud
+        ;		InsufficientPowerSound: nopower1.aud
+        ;		IncomingSound: enemya.aud
+		UnitType: a10c
+		DisplayBeacon: true
+		BeaconPoster: pbmbicon
+		DisplayRadarPing: True
+		CameraActor: camera
