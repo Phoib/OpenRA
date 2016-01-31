@@ -68,45 +68,45 @@ Background@MULTIPLAYER_PANEL:
 			Font: Bold
 
 ScrollPanel@MULTIPLAYER_FILTER_PANEL:
-	Width: 147
+	Width: 158
 	Height: 130
 	Children:
 		Checkbox@WAITING_FOR_PLAYERS:
 			X: 5
 			Y: 5
-			Width: 137
+			Width: PARENT_RIGHT-29
 			Height: 20
 			Text: Waiting
-			TextColor: 50,205,50
+			TextColor: 32CD32
 			Font: Regular
 		Checkbox@EMPTY:
 			X: 5
 			Y: 30
-			Width: 137
+			Width: PARENT_RIGHT-29
 			Height: 20
 			Text: Empty
 			Font: Regular
 		Checkbox@PASSWORD_PROTECTED:
 			X: 5
 			Y: 55
-			Width: 137
+			Width: PARENT_RIGHT-29
 			Height: 20
 			Text: Protected
-			TextColor: 255,0,0
+			TextColor: FF0000
 			Font: Regular
 		Checkbox@ALREADY_STARTED:
 			X: 5
 			Y: 80
-			Width: 137
+			Width: PARENT_RIGHT-29
 			Height: 20
 			Text: Started
-			TextColor: 255,165,0
+			TextColor: FFA500
 			Font: Regular
 		Checkbox@INCOMPATIBLE_VERSION:
 			X: 5
 			Y: 105
-			Width: 137
+			Width: PARENT_RIGHT-29
 			Height: 20
 			Text: Incompatible
-			TextColor: 190,190,190
+			TextColor: BEBEBE
 			Font: Regular

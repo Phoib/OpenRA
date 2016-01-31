@@ -508,14 +508,14 @@ Rules:
 			WindTick: 150, 550
 			InstantWindChanges: false
 			UseSquares: false
-			PaticleSize: 0, 0
 			ScatterDirection: 0, 0
 			Gravity: 8.00, 12.00
 			SwingOffset: 0, 0
 			SwingSpeed: 0, 0
 			SwingAmplitude: 0, 0
-			ParticleColors: 255,48,64,116, 255,40,56,108, 255,32,44,96, 255,24,44,84
+			ParticleColors: 304074, 28386C, 202C60, 182C54
 			LineTailAlphaValue: 150
+			ParticleSize: 1, 1
 		GlobalLightingPaletteEffect:
 			Red: 0.75
 			Green: 0.85
@@ -654,7 +654,7 @@ Rules:
 		Health:
 			HP: 200
 		AutoTarget:
-			InitialStance: Defend
+			InitialStanceAI: Defend
 	SNIPER.soviets:
 		Inherits: SNIPER
 		Buildable:
@@ -672,6 +672,14 @@ Rules:
 			Prerequisites: barracks
 		Valued:
 			Cost: 300
+	FTRK:
+		-Armament@AA:
+		-Armament@AG:
+		Armament:
+			Weapon: FLAK-23
+			Recoil: 85
+			LocalOffset: 512,0,192
+			MuzzleSequence: muzzle
 	ARTY:
 		Inherits: ^Tank
 		Valued:
@@ -788,7 +796,7 @@ Weapons:
 	120mm:
 		ReloadDelay: 150
 		Range: 10c0
-		Report: CANNON1.AUD
+		Report: cannon1.aud
 		Burst: 6
 		Projectile: Bullet
 			Speed: 204
@@ -813,7 +821,7 @@ Weapons:
 	MammothTusk:
 		ReloadDelay: 300
 		Range: 10c0
-		Report: MISSILE6.AUD
+		Report: missile6.aud
 		Burst: 2
 		ValidTargets: Ground, Air
 		Projectile: Missile
@@ -847,7 +855,7 @@ Weapons:
 	TankNapalm:
 		ReloadDelay: 40
 		Range: 8c0
-		Report: AACANON3.AUD
+		Report: aacanon3.aud
 		ValidTargets: Ground
 		Burst: 6
 		BurstDelay: 1
@@ -877,7 +885,7 @@ Weapons:
 	ParaBomb:
 		ReloadDelay: 5
 		Range: 5c0
-		Report: CHUTE1.AUD
+		Report: chute1.aud
 		Projectile: GravityBomb
 			Image: BOMBLET
 			-OpenSequence:
@@ -929,7 +937,7 @@ Weapons:
 	FLAK-23:
 		ReloadDelay: 10
 		Range: 8c0
-		Report: AACANON3.AUD
+		Report: aacanon3.aud
 		ValidTargets: Air, Ground
 		Projectile: Bullet
 			Speed: 1c682
@@ -953,7 +961,7 @@ Weapons:
 		ReloadDelay: 280
 		Range: 7c0
 		MinRange: 3c0
-		Report: MISSILE1.AUD
+		Report: missile1.aud
 		Projectile: Bullet
 			Speed: 170
 			Arm: 10
