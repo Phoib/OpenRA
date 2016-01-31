@@ -72,8 +72,9 @@ WEAPUSA:
 	Exit@1:
 		SpawnOffset: 213,-128,0
 		ExitCell: 0,2
-	Production:
+	ProductionAirdrop:
 		Produces: Vehicle
+		ActorType: m4drop
 	ProvidesPrerequisite@usa:
 		Factions: usa
 		Prerequisite: vehicles.usa
@@ -105,3 +106,29 @@ WEAPUSA:
 		BeaconPoster: pbmbicon
 		DisplayRadarPing: True
 		CameraActor: camera
+
+m4drop:
+	Inherits: ^Plane
+	ParaDrop:
+		DropRange: 15c0
+	Tooltip:
+		Name: Frigate
+		Description: Supply spacecraft
+	Aircraft:
+		ROT: 1
+		Speed: 400 # 126 * ~1.5 for balance reasons
+		Repulsable: False
+		MaximumPitch: 20
+	-AppearsOnRadar:
+	Cargo:
+		MaxWeight: 20
+		PipCount: 10
+	FlyAwayOnIdle:
+	RejectsOrders:
+	Health:
+		HP: 300
+	-Selectable:
+	-GainsExperience:
+    -RenderSprites:
+	RenderSpritesEditorOnly:
+		Image: camera

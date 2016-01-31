@@ -66,6 +66,7 @@ Speech:
 		OnHold: onhold1
 		OperationControlTerminated: opterm1
 		PrimaryBuildingSelected: pribldg1
+		Reinforce: reinfor1
 		ReinforcementsArrived: reinfor1
 		Repairing: repair1
 		SatelliteLaunched: satlnch1
