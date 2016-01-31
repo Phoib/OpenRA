@@ -10,7 +10,7 @@ M1114:
 		Value: 400
 	Tooltip:
 		Name: M1114 HMMWV
-		Description: Scout.\n  .50 cal Heavy Machine Gun
+		Description: Scout.\n  .50 cal Heavy Machine Gun\n   Steel armor
 	Health:
 		HP: 200
 	Armor:

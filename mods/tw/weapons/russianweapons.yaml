@@ -175,3 +175,63 @@ kab500:
 		Explosion: small_splash
 		ImpactSound: splash9.aud
 		ValidImpactTypes: Water
+
+9m311m1:
+	ReloadDelay: 275
+	Range: 40c0
+	Report: MISSILE1.AUD
+	ValidTargets: Air
+	Projectile: Missile
+		Arm: 3
+		Blockable: false
+		ContrailLength: 20
+		Image: MISSILE
+		HorizontalRateOfTurn: 5
+		RangeLimit: 50
+		MaximumSpeed: 1000
+        Acceleration: 50
+        CloseEnough: 1001
+	Warhead@1Dam: SpreadDamage
+		Spread: 128
+		Damage: 500
+		ValidTargets: Air
+		Versus:
+			None: 90
+			Light: 90
+			Heavy: 50
+		DamageTypes: Prone50Percent, TriggerProne, SmallExplosionDeath
+	Warhead@2Smu: LeaveSmudge
+		SmudgeType: Crater
+	Warhead@3Eff: CreateEffect
+		Explosion: med_explosion_air
+		ImpactSound: kaboom25.aud
+
+2a38_30mm:
+	Range: 20c0
+	ReloadDelay: 75
+	Burst: 5
+	Report: AACANON3.AUD
+	ValidTargets: Air, Ground, Water
+	Projectile: Bullet
+		Speed: 50c682
+		Blockable: false
+	Warhead@1Dam: SpreadDamage
+		Spread: 213
+		Damage: 20
+		ValidTargets: Air, Ground, Water
+		Versus:
+			None: 40
+			Wood: 10
+			Light: 60
+			Heavy: 10
+			Concrete: 20
+		DamageTypes: Prone50Percent, TriggerProne, DefaultDeath
+	Warhead@2Eff: CreateEffect
+		Explosion: small_explosion
+		InvalidImpactTypes: Air, AirHit, Water
+	Warhead@3EffAir: CreateEffect
+		Explosion: small_explosion_air
+		ValidImpactTypes: Air, AirHit
+	Warhead@4EffWater: CreateEffect
+		Explosion: small_splash
+		ValidImpactTypes: Water

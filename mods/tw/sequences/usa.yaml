@@ -53,3 +53,13 @@ m109a7:
 		Length: 5
 	icon: m109a7icon
 
+antwq1:
+	idle: jeep
+		Facings: 32
+	turret: ftrk
+		Start: 32
+		Facings: 32
+	muzzle: gunfire2
+		Length: 2
+	icon: antwq1icon
+

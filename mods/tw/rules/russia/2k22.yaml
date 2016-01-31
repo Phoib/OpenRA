@@ -1,0 +1,42 @@
+2K22:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: ~vehicles.russia, ~techlevel.medium
+	Valued:
+		Cost: 1500
+	Tooltip:
+        Name: 2K22M1 Tunguska-M1
+        Description: Anti-Air vehicle.\n  8 9M311-M1 Anti Air missiles\n   dual 30mm cannons\n  Steel armor
+	Health:
+		HP: 600
+	Armor:
+		Type: Medium
+	Mobile:
+		ROT: 10
+		Speed: 92
+	RevealsShroud:
+		Range: 6c0
+	Turreted:
+		ROT: 10
+		Offset: -298,0,298
+	Armament@PRIMARY:
+		Weapon: 9m311m1
+		LocalOffset: 512,0,192
+		MuzzleSequence: muzzle
+	Armament@SECONDARY:
+		Name: secondary
+		Weapon: 2a38_30mm
+		Recoil: 85
+		RecoilRecovery: 25
+		LocalOffset: 768,0,90
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	AutoTarget:
+	SelectionDecorations:
+		VisualBounds: 28,28
+	Power:
+        Amount: -60

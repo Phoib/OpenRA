@@ -52,3 +52,13 @@ r149bmr:
 	muzzle: gunfire2
 		Length: 5
 	icon: 2s35icon
+
+2k22:
+	idle: 1tnk
+		Facings: 32
+	turret: ftrk
+		Start: 32
+		Facings: 32
+	muzzle: gunfire2
+		Length: 2
+	icon: 9k22icon

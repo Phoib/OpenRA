@@ -10,7 +10,7 @@ M4C2V:
         Name: M4
 		Description: Command and Control vehicle.\n  Unarmed
 	Health:
-		HP: 600
+		HP: 200
 	Armor:
 		Type: Medium
 	Mobile:
@@ -25,6 +25,7 @@ M4C2V:
 		Period: 375
 		Amount: 250
 	AirstrikePower:
+		OrderName: A10CStrike
 		Icon: parabombs
 		ChargeTime: 210
 		SquadSize: 3
@@ -39,3 +40,4 @@ M4C2V:
 		BeaconPoster: pbmbicon
 		DisplayRadarPing: True
 		CameraActor: camera
+	ProducibleWithLevel:

@@ -1,0 +1,35 @@
+ANTWQ1:
+	Inherits: ^Vehicle
+	Buildable:
+		Queue: Vehicle
+		BuildPaletteOrder: 60
+		Prerequisites: ~vehicles.usa, ~techlevel.medium
+	Valued:
+		Cost: 1200
+	Tooltip:
+        Name: AN/TWQ-1 Avenger
+        Description: Anti-Air vehicle.\n  8 FIM-92 Stinger Anti Air missiles\n  Steel armor
+	Health:
+		HP: 200
+	Armor:
+		Type: Light
+	Mobile:
+		ROT: 10
+		Speed: 119
+	RevealsShroud:
+		Range: 10c0
+	Turreted:
+		ROT: 10
+		Offset: -298,0,298
+	Armament:
+		Weapon: fim92
+		LocalOffset: 512,0,192
+		MuzzleSequence: muzzle
+	AttackTurreted:
+	WithMuzzleOverlay:
+	WithSpriteTurret:
+	AutoTarget:
+	SelectionDecorations:
+		VisualBounds: 28,28
+	Power:
+        Amount: -40

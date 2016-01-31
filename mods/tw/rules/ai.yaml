@@ -1,6 +1,6 @@
 Player:
 	HackyAI@RushAI:
-		Name: Balanced
+		Name: Cavalry
 		MinimumExcessPower: 40
 		BuildingCommonNames:
 			ConstructionYard: fact
@@ -14,46 +14,30 @@ Player:
 		UnitsCommonNames:
 			Mcv: mcv
 		BuildingLimits:
-			proc: 4
-			barr: 1
-			tent: 1
-			kenn: 1
-			dome: 1
-			weap: 1
-			hpad: 4
-			afld: 4
-			atek: 1
-			stek: 1
-			fix: 1
 		BuildingFractions:
-			proc: 30%
-			powr: 15%
-			apwr: 20%
-			barr: 1%
-			kenn: 0.5%
-			tent: 1%
-			weap: 1%
-			pbox: 7%
-			gun: 7%
-			tsla: 5%
-			ftur: 10%
-			agun: 5%
-			sam: 5%
-			atek: 1%
-			stek: 1%
-			fix: 0.1%
-			dome: 10%
 		UnitsToBuild:
-			m1a2: 50%
-			m3a3: 50%
-			t14a: 50%
-			t15a: 50%
+            m1114: 10%
+			m1a2: 30%
+			m3a3: 30%
+            m4c2v: 20%
+            antwq1: 10%
+            tigr: 10%
+			t14a: 30%
+			t15a: 30%
+            r149bmr: 20%
 		UnitLimits:
-			dog: 4
-			harv: 8
 		SquadSize: 4
-		SupportPowerDecision@spyplane:
-			OrderName: SovietSpyPlane
+		SupportPowerDecision@a10cstrike:
+			OrderName: A10CStrike
+			MinimumAttractiveness: 1
+			Consideration@1:
+				Against: Enemy
+				Types: Structure
+				Attractiveness: 1
+				TargetMetric: None
+				CheckRadius: 5c0
+		SupportPowerDecision@su34strike:
+			OrderName: Su34Strike
 			MinimumAttractiveness: 1
 			Consideration@1:
 				Against: Enemy

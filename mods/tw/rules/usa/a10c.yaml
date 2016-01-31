@@ -27,13 +27,13 @@ A10C:
 	-Voiced:
 	-GainsExperience:
 	Tooltip:
-		Name: Badger
+		Name: A-10C
 	Contrail@1:
 		Offset: -432,560,0
 	Contrail@2:
 		Offset: -432,-560,0
 	SpawnActorOnDeath:
-		Actor: BADR.Husk
+		Actor: A10C.Husk
 	SmokeTrailWhenDamaged@0:
 		Offset: -432,560,0
 		Interval: 2
@@ -45,3 +45,21 @@ A10C:
 	RenderSprites:
 		Image: yak
 
+A10C.Husk:
+	Inherits: ^PlaneHusk
+	Tooltip:
+		Name: A-10C
+	Aircraft:
+		ROT: 5
+		Speed: 373
+		AirborneUpgrades: airborne
+	SmokeTrailWhenDamaged@0:
+		Offset: -432,560,0
+		Interval: 2
+		MinDamage: Undamaged
+	SmokeTrailWhenDamaged@1:
+		Offset: -432,-560,0
+		Interval: 2
+		MinDamage: Undamaged
+	RenderSprites:
+		Image: yak

@@ -25,6 +25,7 @@ R149BMR:
 		Period: 375
 		Amount: 250
 	AirstrikePower:
+		OrderName: Su34Strike
 		Icon: parabombs
 		ChargeTime: 180
 		QuantizedFacings: 8
@@ -38,3 +39,4 @@ R149BMR:
 		BeaconPoster: pbmbicon
 		DisplayRadarPing: True
 		CameraActor: camera
+	ProducibleWithLevel:

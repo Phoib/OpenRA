@@ -99,12 +99,12 @@ World:
 	CreateMPPlayers:
 	MPStartUnits@mcvonly:
 		Class: none
-		ClassName: MCV Only
+		ClassName: HQ Platoon
 		Factions: allies, soviet, usa, russia
 		BaseActor: mcv
 	MPStartUnits@lightallies:
 		Class: light
-		ClassName: Light Support
+		ClassName: Scout Platoon
 		Factions: allies
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,jeep,1tnk
@@ -112,7 +112,7 @@ World:
 		OuterSupportRadius: 5
 	MPStartUnits@lightsoviet:
 		Class: light
-		ClassName: Light Support
+		ClassName: Scout Platoon
 		Factions: soviet
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,apc,ftrk
@@ -120,23 +120,23 @@ World:
 		OuterSupportRadius: 5
 	MPStartUnits@lightusa:
 		Class: light
-		ClassName: Light Support
+		ClassName: Scout Platoon
 		Factions: usa
 		BaseActor: mcv
-		SupportActors: m1114,m1114,m4c2v
+		SupportActors: m4c2v,m3a3,m3a3,m3a3,m3a3,m3a3,m3a3
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@lightrussia:
 		Class: light
-		ClassName: Light Support
+		ClassName: Scout Platoon
 		Factions: russia
 		BaseActor: mcv
-		SupportActors: tigr,tigr,r149bmr
+		SupportActors: r149bmr,t15a,t15a,t15a,t15a,t15a,t15a
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyallies:
 		Class: heavy
-		ClassName: Heavy Support
+		ClassName: Tank Platoon
 		Factions: allies
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,jeep,1tnk,2tnk,2tnk,2tnk
@@ -144,7 +144,7 @@ World:
 		OuterSupportRadius: 5
 	MPStartUnits@heavysoviet:
 		Class: heavy
-		ClassName: Heavy Support
+		ClassName: Tank Platoon
 		Factions: soviet
 		BaseActor: mcv
 		SupportActors: e1,e1,e1,e3,e3,apc,ftrk,3tnk,3tnk
@@ -152,18 +152,18 @@ World:
 		OuterSupportRadius: 5
 	MPStartUnits@heavyusa:
 		Class: heavy
-		ClassName: Heavy Support
+		ClassName: Tank Platoon
 		Factions: usa
 		BaseActor: mcv
-		SupportActors: m1114,m1114,m4c2v,m4c2v,m1a2,m1a2,m3a3,m3a3
+		SupportActors: m4c2v,m1a2,m1a2,m1a2,m1a2
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyrussia:
 		Class: heavy
-		ClassName: Heavy Support
+		ClassName: Tank Platoon
 		Factions: russia
 		BaseActor: mcv
-		SupportActors: tigr,tigr,r149bmr,r149bmr,t14a,t14a,t15a,t15a
+		SupportActors: r149bmr,t14a,t14a,t14a,t14a
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartLocations:
