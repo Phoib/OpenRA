@@ -2,7 +2,7 @@ T15A:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.russia, ~techlevel.medium
 	Valued:
 		Cost: 750

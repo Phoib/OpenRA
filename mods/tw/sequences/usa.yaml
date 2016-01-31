@@ -34,6 +34,8 @@ m1114:
 m4c2v:
 	idle: apc
 		Facings: 32
+	make: silomake
+	build-top: silomake
 	muzzle: minigun
 		Length: 6
 		Facings: 8

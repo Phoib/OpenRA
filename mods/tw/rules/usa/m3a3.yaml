@@ -2,7 +2,7 @@ M3A3:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 30
+		BuildPaletteOrder: 20
 		Prerequisites: ~vehicles.usa, ~techlevel.medium
 	Valued:
 		Cost: 750

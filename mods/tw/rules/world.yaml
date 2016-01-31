@@ -100,8 +100,18 @@ World:
 	MPStartUnits@mcvonly:
 		Class: none
 		ClassName: HQ Platoon
-		Factions: allies, soviet, usa, russia
+		Factions: allies, soviet
 		BaseActor: mcv
+	MPStartUnits@noneusa:
+		Class: none
+		ClassName: HQ Platoon
+		Factions: usa
+		BaseActor: m4c2v
+	MPStartUnits@nonerussia:
+		Class: none
+		ClassName: HQ Platoon
+		Factions: russia
+		BaseActor: r149bmr
 	MPStartUnits@lightallies:
 		Class: light
 		ClassName: Scout Platoon
@@ -122,16 +132,16 @@ World:
 		Class: light
 		ClassName: Scout Platoon
 		Factions: usa
-		BaseActor: mcv
-		SupportActors: m4c2v,m3a3,m3a3,m3a3,m3a3,m3a3,m3a3
+		BaseActor: m4c2v
+		SupportActors: m3a3,m3a3,m3a3,m3a3,m3a3,m3a3
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@lightrussia:
 		Class: light
 		ClassName: Scout Platoon
 		Factions: russia
-		BaseActor: mcv
-		SupportActors: r149bmr,t15a,t15a,t15a,t15a,t15a,t15a
+		BaseActor: r149bmr
+		SupportActors: t15a,t15a,t15a,t15a,t15a,t15a
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyallies:
@@ -154,16 +164,16 @@ World:
 		Class: heavy
 		ClassName: Tank Platoon
 		Factions: usa
-		BaseActor: mcv
-		SupportActors: m4c2v,m1a2,m1a2,m1a2,m1a2
+		BaseActor: m4c2v
+		SupportActors: m1a2,m1a2,m1a2,m1a2
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartUnits@heavyrussia:
 		Class: heavy
 		ClassName: Tank Platoon
 		Factions: russia
-		BaseActor: mcv
-		SupportActors: r149bmr,t14a,t14a,t14a,t14a
+		BaseActor: r149bmr
+		SupportActors: t14a,t14a,t14a,t14a
 		InnerSupportRadius: 3
 		OuterSupportRadius: 5
 	MPStartLocations:

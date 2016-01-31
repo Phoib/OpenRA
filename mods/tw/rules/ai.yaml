@@ -12,7 +12,7 @@ Player:
 			NavalProduction: spen,syrd
 			Silo: silo
 		UnitsCommonNames:
-			Mcv: mcv
+			Mcv: m4c2v,r149bmr
 		BuildingLimits:
 		BuildingFractions:
 		UnitsToBuild:

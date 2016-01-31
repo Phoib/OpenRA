@@ -2,7 +2,7 @@ M4C2V:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.usa, ~techlevel.low
 	Valued:
 		Cost: 500
@@ -41,3 +41,67 @@ M4C2V:
 		DisplayRadarPing: True
 		CameraActor: camera
 	ProducibleWithLevel:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	Selectable:
+		Priority: 4
+	Transforms:
+		IntoActor: weapusa
+		Facing: 96
+		TransformSounds: placbldg.aud, build5.aud
+		NoTransformNotification: BuildingCannotPlaceAudio
+
+WEAPUSA:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+	Tooltip:
+		Name: Deployed M4
+		Description: Produces vehicles.
+	Building:
+	Health:
+		HP: 200
+	Armor:
+		Type: Medium
+	RevealsShroud:
+		Range: 10c0
+	WithProductionDoorOverlay:
+		Sequence: build-top
+	RallyPoint:
+	Exit@1:
+		SpawnOffset: 213,-128,0
+		ExitCell: 0,2
+	Production:
+		Produces: Vehicle
+	ProvidesPrerequisite@usa:
+		Factions: usa
+		Prerequisite: vehicles.usa
+	RenderSprites:
+		Image: m4c2v
+	Transforms:
+		IntoActor: m4c2v
+		Facing: 96
+	ProvidesRadar:
+	RequiresPower:
+	CashTrickler:
+		Period: 375
+		Amount: 500
+	Power:
+		Amount: 200
+	AirstrikePower:
+		OrderName: A10CStrike
+		Icon: parabombs
+		ChargeTime: 210
+		SquadSize: 3
+		QuantizedFacings: 8
+        Description: A-10C Air Strike
+        LongDesc: Deploy a flight of A-10C.\nAttacks with 30mm cannon and cluster bombs.
+        ;		SelectTargetSound: select1.aud
+        ;		InsufficientPowerSound: nopower1.aud
+        ;		IncomingSound: enemya.aud
+		UnitType: a10c
+		DisplayBeacon: true
+		BeaconPoster: pbmbicon
+		DisplayRadarPing: True
+		CameraActor: camera

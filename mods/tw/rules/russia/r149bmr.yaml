@@ -2,7 +2,7 @@ R149BMR:
 	Inherits: ^Vehicle
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 20
+		BuildPaletteOrder: 40
 		Prerequisites: ~vehicles.russia, ~techlevel.low
 	Valued:
 		Cost: 500
@@ -40,3 +40,65 @@ R149BMR:
 		DisplayRadarPing: True
 		CameraActor: camera
 	ProducibleWithLevel:
+	MustBeDestroyed:
+		RequiredForShortGame: true
+	BaseBuilding:
+	Selectable:
+		Priority: 4
+	Transforms:
+		IntoActor: weaprus
+		Facing: 96
+		TransformSounds: placbldg.aud, build5.aud
+		NoTransformNotification: BuildingCannotPlaceAudio
+
+WEAPRUS:
+	Inherits: ^Building
+	Buildable:
+		Queue: Building
+	Tooltip:
+        Name: Deployed R-149BMR
+	Building:
+	Health:
+		HP: 100
+	Armor:
+		Type: Light
+	RevealsShroud:
+		Range: 10c0
+	WithProductionDoorOverlay:
+		Sequence: build-top
+	RallyPoint:
+	Exit@1:
+		SpawnOffset: 213,-128,0
+		ExitCell: 0,2
+	Production:
+		Produces: Vehicle
+	ProvidesPrerequisite@russia:
+		Factions: russia
+		Prerequisite: vehicles.russia
+	RenderSprites:
+		Image: r149bmr
+	Transforms:
+		IntoActor: r149bmr
+		Facing: 96
+	ProvidesRadar:
+	RequiresPower:
+	CashTrickler:
+		Period: 375
+		Amount: 500
+	Power:
+		Amount: 200
+	AirstrikePower:
+		OrderName: Su34Strike
+		Icon: parabombs
+		ChargeTime: 180
+		QuantizedFacings: 8
+        Description: Su-34 Air Strike
+        LongDesc: Deploy a Su-34.\nAttacks KAB-500 gravity bombs
+        ;		SelectTargetSound: select1.aud
+        ;		InsufficientPowerSound: nopower1.aud
+        ;		IncomingSound: enemya.aud
+		UnitType: su34
+		DisplayBeacon: true
+		BeaconPoster: pbmbicon
+		DisplayRadarPing: True
+		CameraActor: camera

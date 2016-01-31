@@ -2,7 +2,7 @@ M1A2:
 	Inherits: ^Tank
 	Buildable:
 		Queue: Vehicle
-		BuildPaletteOrder: 40
+		BuildPaletteOrder: 30
 		Prerequisites: ~vehicles.usa, ~techlevel.medium
 	Valued:
 		Cost: 1000
