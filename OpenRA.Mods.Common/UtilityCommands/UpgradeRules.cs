@@ -759,16 +759,16 @@ namespace OpenRA.Mods.Common.UtilityCommands
 
 				if (engineVersion < 20160403)
 				{
-					// Fix change in experience levels required.
-					Console.WriteLine("The 'Upgrades' property of the 'GainsExperience' trait has been");
-					Console.WriteLine("modified. Please divide the levels by 100, to ensure the correct");
-					Console.WriteLine("levels are used. These can be found in the defaults.yaml files");
-					Console.WriteLine("in all mods.");
-					Console.WriteLine("Example:");
-					Console.WriteLine("	200: firepower, damage, speed, reload, inaccuracy, rank");
-					Console.WriteLine("should become:");
-					Console.WriteLine("	2: firepower, damage, speed, reload, inaccuracy, rank");
-					Console.WriteLine();
+					// Remove the redundant multiplier from GainsExperience.
+					if (node.Key == "Upgrades" && parent.Key == "GainsExperience")
+					{
+						foreach (var upgnode in node.Value.Nodes)
+						{
+							var exp = int.Parse(upgnode.Key);
+							exp = exp / 100;
+							upgnode.Key = exp.ToString();
+						}
+					}
 				}
 
 				UpgradeActorRules(engineVersion, ref node.Value.Nodes, node, depth + 1);
